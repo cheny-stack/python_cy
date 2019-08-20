@@ -3,15 +3,16 @@ import time, random, re, json, requests
 from selenium import webdriver
 from selenium.webdriver import Chrome
 from selenium.webdriver.firefox.options import Options
+import xlwings as xw
 
 # 微信公众号账号
-from article import Article
+from wechat_data.article import Article
 
 user = "xxx"
 # 公众号密码
 password = "xxx"
 # 设置要爬取的公众号列表
-gzlist = ['世联行']
+gzlist = ['仲量联行','戴德梁行','第一太平戴维斯', '高力国际', '中指院', '易居&克尔瑞', '亿韩', '世联行', '同策','保利投顾研究院', '睿意德', '易维斯', '赢商网', '盈石','全联房地产商会商业地产研究', '观点']
 chrome_driver = 'C:/work/tools/chromedriver/chromedriver.exe'
 
 
@@ -115,11 +116,12 @@ def get_content(query):
     # 打开搜索的微信公众号文章列表页
     appmsg_response = requests.get(appmsg_url, cookies=cookies, headers=header, params=query_id_data)
     # 获取文章总数
-    max_num = 10 #appmsg_response.json().get('app_msg_cnt')
+    max_num = 4 #appmsg_response.json().get('app_msg_cnt')
     # 每页至少有5条，获取文章总的页数，爬取时需要分页爬
     num = int(int(max_num) / 5)
     # 起始页begin参数，往后每页加5
     begin = 0
+    data_list = []
     while num + 1 > 0:
         query_id_data = {
             'token': token,
@@ -138,34 +140,57 @@ def get_content(query):
         # 获取每一页文章的标题和链接地址，并写入本地文本中
         query_fakeid_response = requests.get(appmsg_url, cookies=cookies, headers=header, params=query_id_data)
         fakeid_list = query_fakeid_response.json().get('app_msg_list')
-        # content_data ={'link': '', 'title': '', 'create_time': '', 'name': ''}
-        article = Article()
-        for item in fakeid_list:
-            article.name = query
-            article.link = item.get('link')
-            article.title = item.get('title')
-            create_time = item.get('create_time')
-            timeArray = time.localtime(create_time)
-            article.create_time = time.strftime("%Y-%m-%d %H:%M:%S", timeArray)
 
-            fileName = query + '.txt'
-            with open(fileName, 'a', encoding='utf-8') as fh:
-                fh.write(article.title + ":\n" + article.link + "\n"+ article.create_time + "\n")
+        if fakeid_list:
+            for item in fakeid_list:
+                article = Article()
+                article.name = query
+                article.link = item.get('link')
+                article.title = item.get('title')
+                create_time = item.get('create_time')
+                timeArray = time.localtime(create_time)
+                article.create_time = time.strftime("%Y-%m-%d %H:%M:%S", timeArray)
+                data_list.append(article)
+                print('爬取文章', article.title)
+        else:
+            print("爬取失败："+query)
+            # sheet.range('D' + str(sheet_id)).add_hyperlink( article.link, '链接','提示：点击即链接到公众号文章')
         num -= 1
         begin = int(begin)
         begin += 5
         time.sleep(2)
+    return data_list
+
 
 
 if __name__ == '__main__':
     # 登录微信公众号，获取登录之后的cookies信息，并保存到本地文本中
-    weChat_login()
+    # weChat_login()
     # 登录之后，通过微信公众号后台提供的微信公众号文章接口爬取文章
+
+    all_data_list =[]
     for query in gzlist:
         # 爬取微信公众号文章，并存在本地文本中
         print("开始爬取公众号：" + query)
-        get_content(query)
-        print("爬取完成")
+        get_list =get_content(query)
+        get_list = get_list if (len(get_list) <= 5) else get_list[0:5]
+        all_data_list.extend(get_list)
+
+    print("爬取完成,爬取数量 ：" + str(len(all_data_list)))
+
+    app = xw.App(visible=True, add_book=False)
+    wb = app.books.add()
+    # wb就是新建的工作簿(workbook)，下面则对wb的sheet1的A1单元格赋值
+    wb.sheets['sheet1'].range('A1').value = ["公众号", "文章标题", "时间", "链接"]
+    index = 1
+    for daticle_data in all_data_list:
+        index = index +1
+        wb.sheets['sheet1'].range('A'+str(index)).value = [daticle_data.name, daticle_data.title, daticle_data.create_time, daticle_data.link]
+    wb.save(r'公众号近5篇文章.xlsx')
+    wb.close()
+    app.quit()
+
+
     # try:
     #     #登录微信公众号，获取登录之后的cookies信息，并保存到本地文本中
     #     weChat_login()

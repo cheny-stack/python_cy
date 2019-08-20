@@ -1,9 +1,5 @@
-'''
-文章实体类
-'''
-
-
 class Article(object):
+    id =None
     name = None
     title = None
     link = None
