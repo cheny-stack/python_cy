@@ -8,11 +8,16 @@ import xlwings as xw
 # 微信公众号账号
 from wechat_data.article import Article
 
+
 user = "xxx"
 # 公众号密码
 password = "xxx"
 # 设置要爬取的公众号列表
-gzlist = ['仲量联行','戴德梁行','第一太平戴维斯', '高力国际', '中指院', '易居&克尔瑞', '亿韩', '世联行', '同策','保利投顾研究院', '睿意德', '易维斯', '赢商网', '盈石','全联房地产商会商业地产研究', '观点']
+# gzlist = ['仲量联行','戴德梁行','第一太平戴维斯', '高力国际', '中指院', '易居&克尔瑞', '亿韩', '世联行', '同策','保利投顾研究院', '睿意德', '易维斯', '赢商网', '盈石','全联房地产商会商业地产研究', '观点']
+# gzlist =['链家地产','诸葛找房','买房呀']
+gzlist =['培训每日谈','李尚龙','拾遗']
+save_file_name ='链家地产'
+data_limit = 30000
 chrome_driver = 'C:/work/tools/chromedriver/chromedriver.exe'
 
 
@@ -61,7 +66,7 @@ def weChat_login():
 
 
 # 爬取微信公众号文章，并存在本地文本中
-def get_content(query):
+def get_content(query ,data_limit):
     # query为要爬取的公众号名称
     # 公众号主页
     url = 'https://mp.weixin.qq.com'
@@ -116,7 +121,9 @@ def get_content(query):
     # 打开搜索的微信公众号文章列表页
     appmsg_response = requests.get(appmsg_url, cookies=cookies, headers=header, params=query_id_data)
     # 获取文章总数
-    max_num = 4 #appmsg_response.json().get('app_msg_cnt')
+    max_num =appmsg_response.json().get('app_msg_cnt')
+    #限制数量
+    max_num = max_num if (data_limit - 1) >= max_num else (data_limit -1)
     # 每页至少有5条，获取文章总的页数，爬取时需要分页爬
     num = int(int(max_num) / 5)
     # 起始页begin参数，往后每页加5
@@ -158,7 +165,7 @@ def get_content(query):
         num -= 1
         begin = int(begin)
         begin += 5
-        time.sleep(2)
+        time.sleep(3)
     return data_list
 
 
@@ -172,8 +179,8 @@ if __name__ == '__main__':
     for query in gzlist:
         # 爬取微信公众号文章，并存在本地文本中
         print("开始爬取公众号：" + query)
-        get_list =get_content(query)
-        get_list = get_list if (len(get_list) <= 5) else get_list[0:5]
+        get_list =get_content(query ,data_limit)
+        get_list = get_list if (len(get_list) <= data_limit) else get_list[0:data_limit]
         all_data_list.extend(get_list)
 
     print("爬取完成,爬取数量 ：" + str(len(all_data_list)))
@@ -185,8 +192,9 @@ if __name__ == '__main__':
     index = 1
     for daticle_data in all_data_list:
         index = index +1
-        wb.sheets['sheet1'].range('A'+str(index)).value = [daticle_data.name, daticle_data.title, daticle_data.create_time, daticle_data.link]
-    wb.save(r'公众号近5篇文章.xlsx')
+        wb.sheets['sheet1'].range('A'+str(index)).value = [daticle_data.name, daticle_data.title, daticle_data.create_time]
+        wb.sheets['sheet1'].range('D' + str(index)).add_hyperlink( daticle_data.link, '进入', '提示：点击即链接到文章')
+    wb.save( save_file_name+'.xlsx')
     wb.close()
     app.quit()
 
