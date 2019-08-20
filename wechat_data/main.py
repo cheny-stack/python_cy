@@ -7,9 +7,9 @@ from selenium.webdriver.firefox.options import Options
 # 微信公众号账号
 from article import Article
 
-user = "478959472@qq.com"
+user = "xxx"
 # 公众号密码
-password = "yifanYUN321.."
+password = "xxx"
 # 设置要爬取的公众号列表
 gzlist = ['世联行']
 chrome_driver = 'C:/work/tools/chromedriver/chromedriver.exe'
