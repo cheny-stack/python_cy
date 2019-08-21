@@ -9,7 +9,7 @@ import xlwings as xw
 from wechat_data.article import Article
 
 
-user = "xxx"
+user = "478959472@qq.com"
 # 公众号密码
 password = "xxx"
 # 设置要爬取的公众号列表
@@ -17,7 +17,9 @@ password = "xxx"
 # gzlist =['链家地产','诸葛找房','买房呀']
 gzlist =['培训每日谈','李尚龙','拾遗']
 save_file_name ='链家地产'
-data_limit = 30000
+data_limit = 100
+#开始爬取位置
+start_index = 0
 chrome_driver = 'C:/work/tools/chromedriver/chromedriver.exe'
 
 
@@ -121,13 +123,18 @@ def get_content(query ,data_limit):
     # 打开搜索的微信公众号文章列表页
     appmsg_response = requests.get(appmsg_url, cookies=cookies, headers=header, params=query_id_data)
     # 获取文章总数
-    max_num =appmsg_response.json().get('app_msg_cnt')
+    max_num = appmsg_response.json().get('app_msg_cnt')
+    if max_num == None:
+        print('爬取失败：'+str(appmsg_response.json()))
+        return []
     #限制数量
     max_num = max_num if (data_limit - 1) >= max_num else (data_limit -1)
+    # 减去开始位置数
+    begin = start_index
+    max_num = max_num - begin
     # 每页至少有5条，获取文章总的页数，爬取时需要分页爬
     num = int(int(max_num) / 5)
     # 起始页begin参数，往后每页加5
-    begin = 0
     data_list = []
     while num + 1 > 0:
         query_id_data = {
@@ -165,10 +172,22 @@ def get_content(query ,data_limit):
         num -= 1
         begin = int(begin)
         begin += 5
-        time.sleep(3)
+        time.sleep(15)
     return data_list
 
-
+def create_excel(data_list,file_name):
+    app = xw.App(visible=True, add_book=False)
+    wb = app.books.add()
+    # wb就是新建的工作簿(workbook)，下面则对wb的sheet1的A1单元格赋值
+    wb.sheets['sheet1'].range('A1').value = ["公众号", "文章标题", "时间", "链接"]
+    index = 1
+    for daticle_data in data_list:
+        index = index +1
+        wb.sheets['sheet1'].range('A'+str(index)).value = [daticle_data.name, daticle_data.title, daticle_data.create_time]
+        wb.sheets['sheet1'].range('D' + str(index)).add_hyperlink( daticle_data.link, '进入', '提示：点击即链接到文章')
+    wb.save( file_name+'.xlsx')
+    wb.close()
+    app.quit()
 
 if __name__ == '__main__':
     # 登录微信公众号，获取登录之后的cookies信息，并保存到本地文本中
@@ -181,22 +200,12 @@ if __name__ == '__main__':
         print("开始爬取公众号：" + query)
         get_list =get_content(query ,data_limit)
         get_list = get_list if (len(get_list) <= data_limit) else get_list[0:data_limit]
+        create_excel(get_list,query+'_'+str(start_index)+'_'+str(data_limit))
         all_data_list.extend(get_list)
 
     print("爬取完成,爬取数量 ：" + str(len(all_data_list)))
+    create_excel(all_data_list, save_file_name)
 
-    app = xw.App(visible=True, add_book=False)
-    wb = app.books.add()
-    # wb就是新建的工作簿(workbook)，下面则对wb的sheet1的A1单元格赋值
-    wb.sheets['sheet1'].range('A1').value = ["公众号", "文章标题", "时间", "链接"]
-    index = 1
-    for daticle_data in all_data_list:
-        index = index +1
-        wb.sheets['sheet1'].range('A'+str(index)).value = [daticle_data.name, daticle_data.title, daticle_data.create_time]
-        wb.sheets['sheet1'].range('D' + str(index)).add_hyperlink( daticle_data.link, '进入', '提示：点击即链接到文章')
-    wb.save( save_file_name+'.xlsx')
-    wb.close()
-    app.quit()
 
 
     # try:
