@@ -11,13 +11,13 @@ from wechat_data.article import Article
 
 user = "478959472@qq.com"
 # 公众号密码
-password = "xxx"
-# 设置要爬取的公众号列表
-# gzlist = ['仲量联行','戴德梁行','第一太平戴维斯', '高力国际', '中指院', '易居&克尔瑞', '亿韩', '世联行', '同策','保利投顾研究院', '睿意德', '易维斯', '赢商网', '盈石','全联房地产商会商业地产研究', '观点']
+password = "yifanYUN321.."
+# 设置要爬取的公众号列表 '仲量联行','戴德梁行','第一太平戴维斯', '高力国际', '中指院', '易居&克尔瑞', '亿韩', '世联行',
+gzlist = [ '同策','保利投顾研究院', '睿意德', '易维斯', '赢商网', '盈石','全联房地产商会商业地产研究', '观点']
 # gzlist =['链家地产','诸葛找房','买房呀']
-gzlist =['培训每日谈','李尚龙','拾遗']
-save_file_name ='链家地产'
-data_limit = 100
+# gzlist =['培训每日谈','李尚龙','拾遗']
+save_file_name ='地产'
+data_limit = 50
 #开始爬取位置
 start_index = 0
 chrome_driver = 'C:/work/tools/chromedriver/chromedriver.exe'
@@ -172,7 +172,7 @@ def get_content(query ,data_limit):
         num -= 1
         begin = int(begin)
         begin += 5
-        time.sleep(15)
+        time.sleep(5)
     return data_list
 
 def create_excel(data_list,file_name):
@@ -202,6 +202,8 @@ if __name__ == '__main__':
         get_list = get_list if (len(get_list) <= data_limit) else get_list[0:data_limit]
         create_excel(get_list,query+'_'+str(start_index)+'_'+str(data_limit))
         all_data_list.extend(get_list)
+        if len(all_data_list)>150 :
+            time.sleep(300)
 
     print("爬取完成,爬取数量 ：" + str(len(all_data_list)))
     create_excel(all_data_list, save_file_name)
