@@ -2,6 +2,8 @@ import pyperclip as pyperclip
 import re
 import subprocess
 
+# https://github.com/majido/clipper/releases/download/v1.2.1/clipper.apk
+
 data = pyperclip.paste()
 data = re.sub(r"[\r\n*]", "", str(data)).split("作者：", 1)[0].split("版权声明：", 1)[0]
 
