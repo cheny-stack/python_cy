@@ -22,6 +22,8 @@
 
 import pyperclip as pyperclip
 import re
+import subprocess
+
 data = pyperclip.paste()
 data = re.sub(r"[\r\n*]", "", str(data)).split("作者：", 1)[0].split("版权声明：", 1)[0]
 pyperclip.copy(data)
