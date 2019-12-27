@@ -1,3 +1,5 @@
+import time
+
 import pyperclip as pyperclip
 import re
 import subprocess
@@ -11,5 +13,12 @@ if len(data) > 0:
     cmd = ['adb', 'shell']
     procId = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     cmd = 'am broadcast -a clipper.set -e text "' + data + '"\nexit\n'
+    procId.communicate(cmd.encode('utf-8'))
+    procId.poll()
+    # 点击确定按钮
+    # time.sleep(1)
+    cmd = ['adb', 'shell']
+    procId = subprocess.Popen(cmd, stdin=subprocess.PIPE)
+    cmd = 'input tap 396 538' + '\nexit\n'
     procId.communicate(cmd.encode('utf-8'))
     procId.poll()
