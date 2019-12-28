@@ -1,14 +1,13 @@
-import time
-
 import pyperclip as pyperclip
 import re
 import subprocess
 
-# https://github.com/majido/clipper/releases/download/v1.2.1/clipper.apk
-
+# 获取电脑剪切板内容
 data = pyperclip.paste()
+# 过滤一些特殊字符和文章声明
 data = re.sub(r"[-_\r\n\"*]", "", str(data)).split("作者：", 1)[0].split("版权声明：", 1)[0]
-data = re.sub(r"[丨 ]", "", str(data))
+data = re.sub(r"[丨]", "", str(data))
+# 通过adb发送到android模拟器的剪切板
 if len(data) > 0:
     cmd = ['adb', 'shell']
     procId = subprocess.Popen(cmd, stdin=subprocess.PIPE)
