@@ -6,7 +6,9 @@ import subprocess
 data = pyperclip.paste()
 # 过滤一些特殊字符和文章声明
 data = re.sub(r"[-_\r\n\"*]", "", str(data)).split("作者：", 1)[0].split("版权声明：", 1)[0]
-data = re.sub(r"[丨]", "", str(data))
+# data = re.sub(r"[丨 ]", "", str(data))
+data = re.sub(r"([\u4e00-\u9fa5]+)\s+", lambda x: x.group(1), str(data))
+data = re.sub(r"\s+([\u4e00-\u9fa5]+)", lambda x: x.group(1), str(data))
 # 通过adb发送到android模拟器的剪切板
 if len(data) > 0:
     cmd = ['adb', '-s', '127.0.0.1:62001', 'shell']
