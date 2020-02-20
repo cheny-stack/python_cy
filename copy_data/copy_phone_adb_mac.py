@@ -16,32 +16,28 @@ data = re.sub(r"\n著作权归.*\n", "\n", str(data))
 
 data = re.sub(r"[-_\r\n\"*]", "", str(data))
 
-print(data)
-sys. exit(0)
+# print(data)
+# sys. exit(0)
 data = re.sub(r"千", "于", str(data))
 data = re.sub(r"([\u4e00-\u9fa5]+)\s+", lambda x: x.group(1), str(data))
 data = re.sub(r"\s+([\u4e00-\u9fa5]+)", lambda x: x.group(1), str(data))
+# 生成脚本文件
+cmd_str = 'am broadcast -a clipper.set -e text "' + data + '"\n' \
+      + 'input tap 311 132 \n' \
+      + 'sleep 0.2 \n' \
+      + 'input tap 465 687 \n' \
+      + 'input tap 729 1672 \n' \
+      + 'input tap 72 143 \n' \
+      + 'input tap 50 137 \n' \
+      + 'input tap 914 1077 \n' \
+      + 'exit\n'
+sh_file = open("longcommand.sh", "w", encoding='utf-8')
+sh_file.write(cmd_str)
+sh_file.close()
+#sys.exit(0)
+# 上传文件到模拟器
+print(subprocess.call("adb push longcommand.sh /data/local/tmp", shell=True))
 # 通过adb发送到android模拟器的剪切板
 if len(data) > 0:
     # cmd = ['adb', '-s', '127.0.0.1:62001', 'shell']
-    cmd = ['adb', 'shell']
-    procId = subprocess.Popen(cmd, stdin=subprocess.PIPE)
-    cmd = 'am broadcast -a clipper.set -e text "' + data + '"\n' \
-          + 'input tap 311 132 \n' \
-          + 'sleep 0.2 \n' \
-          + 'input tap 465 687 \n' \
-          + 'input tap 729 1672 \n' \
-          + 'input tap 72 143 \n' \
-          + 'input tap 50 137 \n' \
-          + 'input tap 914 1077 \n' \
-          +'exit\n'
-    procId.communicate(cmd.encode('utf-8'))
-    procId.poll()
-    # 点击确定按钮
-    # time.sleep(1)
-    # cmd = ['adb', 'shell']
-    # procId = subprocess.Popen(cmd, stdin=subprocess.PIPE)
-    # cmd = '
-    # input tap 396 538' + '\nexit\n'
-    # procId.communicate(cmd.encode('utf-8'))
-    # procId.poll()
+    print(subprocess.call("adb shell sh /data/local/tmp/longcommand.sh", shell=True))
