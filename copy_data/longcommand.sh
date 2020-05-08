@@ -1,0 +1,5 @@
+am broadcast -a clipper.set -e text "首先到FFmpeg官网上下载稳定版本的FFmpeg源码，本章将会从下载到的最干净的代码开始逐步进行操作。然后将下载的源码解压到一个目录中，FFmpeg与大部分GNU软件的编译方式类似，都是通过configure脚本来实现编译前定制的，这种方式允许用户在编译前对软件进行裁剪，同时通过对最终运行到的系统以及目标平台的配置来决定对某些模块设定合适的配置。configure脚本运行完毕之后，会生成config.mk和config.h这两个文件，分别作用到makefile和源代码的层次，由这两个部分协同实现对编译选项的控制。所以下面先来看看configure的脚本，可以利用它的help命令来查看其到底提供了哪些选项"
+
+sleep 0.2
+input tap 396 538
+exit
