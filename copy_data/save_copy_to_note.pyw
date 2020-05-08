@@ -2,7 +2,7 @@
 import time
 import pyperclip as pyperclip
 
-note_path = "C:/Users/montnets/iCloudDrive/Documents/myNote.txt"
+note_path = "C:/Users/montnets/iCloudDrive/Documents/my_note.txt"
 
 # 获取电脑剪切板内容
 data = pyperclip.paste()
