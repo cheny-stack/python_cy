@@ -8,5 +8,6 @@ import subprocess
 
 # 获取电脑剪切板内容
 data = pyperclip.paste()
+pyperclip.copy('')
 print(data)
 pyperclip.copy(data)
