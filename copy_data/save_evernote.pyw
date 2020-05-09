@@ -1,14 +1,9 @@
 # -*- coding: utf-8 -*
-import re
 import time
-import pyperclip as pyperclip
-import uuid
-from datetime import datetime
 
+import pyperclip as pyperclip
 from evernote.api.client import EvernoteClient
 from evernote.edam.notestore import NoteStore
-from evernote.edam.type.ttypes import Tag, Note
-
 
 # 获取电脑剪切板内容
 data = pyperclip.paste()
@@ -25,7 +20,6 @@ copy_data = '''
 <div>%s</div>
 %s
 <div><br/></div>
-<div><br/></div>
 ''' % (dateTime, line_data)
 #dateTime + "\n" + data + "\n\n"
 print(data)
@@ -41,7 +35,7 @@ def remote_search(auth_token, note_store, search_string):
     return note_store.findNotesMetadata(auth_token, my_filter, 0, 10, spec)
 
 # create note_store
-auth_token = "xxx"
+auth_token = ""
 client = EvernoteClient(token=auth_token, sandbox=False ,china=True)
 user_store = client.get_user_store()
 user = user_store.getUser()
