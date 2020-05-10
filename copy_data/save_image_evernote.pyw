@@ -3,13 +3,15 @@ import hashlib
 import mimetypes
 import os
 import time
-from PIL import Image,ImageGrab
+from PIL import Image, ImageGrab
 
 import pyperclip as pyperclip
 from evernote.api.client import EvernoteClient
 from evernote.edam.notestore import NoteStore
 import evernote.edam.type.ttypes as Types
 
+note_name = "my_note"
+auth_token = ""
 # 获取电脑剪切板图片
 image_path = "screen.png"
 image = ImageGrab.grabclipboard()
@@ -20,14 +22,14 @@ else:
     print("没有截图")
     exit()
 
-
 dateTime = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
 copy_data = '''
 <div><br/></div>
 <div>%s</div>
 ''' % (dateTime)
 
-hashHex=""
+hashHex = ""
+
 
 def remote_search(auth_token, note_store, search_string):
     my_filter = NoteStore.NoteFilter()
@@ -38,6 +40,7 @@ def remote_search(auth_token, note_store, search_string):
     spec.includeTitle = True
     spec.includeTagGuids = True
     return note_store.findNotesMetadata(auth_token, my_filter, 0, 10, spec)
+
 
 def build_file(path):
     filedata = open(path, 'rb').read()
@@ -55,16 +58,16 @@ def build_file(path):
     res = {"resource": resource, "hashHex": hashHex}
     return res
 
+
 # create note_store
-auth_token = ""
-client = EvernoteClient(token=auth_token, sandbox=False ,china=True)
+client = EvernoteClient(token=auth_token, sandbox=False, china=True)
 user_store = client.get_user_store()
 user = user_store.getUser()
-print (user.username)
+print(user.username)
 
-note_store =client.get_note_store()
+note_store = client.get_note_store()
 # search for the note
-note_list = remote_search(auth_token, note_store, "intitle:my_image_note")
+note_list = remote_search(auth_token, note_store, "intitle:" + note_name)
 
 # add tag to notes found
 for note in note_list.notes:
@@ -75,8 +78,8 @@ for note in note_list.notes:
     content = note_data.content
     content = content.replace("</en-note>", "")
     content += copy_data
-    #添加资源
-    file_info=build_file(image_path)
+    # 添加资源
+    file_info = build_file(image_path)
     content += '<en-media type="' + file_info["resource"].mime + '" hash="' + file_info["hashHex"] + '"/>'
     content += "</en-note>"
     print(content)

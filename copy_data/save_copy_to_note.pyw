@@ -2,7 +2,7 @@
 import time
 import pyperclip as pyperclip
 
-note_path = "C:/Users/montnets/iCloudDrive/Documents/my_note.txt"
+note_path = "/Users/cheny/Documents/my_note.txt"
 
 # 获取电脑剪切板内容
 data = pyperclip.paste()
@@ -11,7 +11,7 @@ data = dateTime + "\n" + data + "\n\n"
 print(data)
 
 # Open the file in append & read mode ('a+')
-with open(note_path, "a+") as file_object:
+with open(note_path, "a+", encoding="utf8", errors='ignore' ) as file_object:
     # Move read cursor to the start of file.
     file_object.seek(0)
     # If file is not empty then append '\n'
