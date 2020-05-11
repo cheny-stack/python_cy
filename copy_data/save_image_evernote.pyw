@@ -10,7 +10,7 @@ from evernote.api.client import EvernoteClient
 from evernote.edam.notestore import NoteStore
 import evernote.edam.type.ttypes as Types
 
-note_name = "my_note"
+note_name = "my_image_note"
 auth_token = ""
 # 获取电脑剪切板图片
 image_path = "screen.png"
