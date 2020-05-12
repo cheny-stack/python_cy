@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*
+import html
 import time
 
 import pyperclip as pyperclip
@@ -9,6 +10,7 @@ note_name = "my_note"
 auth_token = ""
 # 获取电脑剪切板内容
 data = pyperclip.paste()
+data = html.escape(data)
 # data =re.sub(r"[\r\n]", "\n", str(data))
 data_list = data.splitlines()
 line_data = ""
