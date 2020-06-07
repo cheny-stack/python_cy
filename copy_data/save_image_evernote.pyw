@@ -11,7 +11,8 @@ from evernote.edam.notestore import NoteStore
 import evernote.edam.type.ttypes as Types
 
 note_name = "my_image_note"
-auth_token = ""
+auth_token = "S=s34:U=6f9a64:E=1721bbc673e:C=171f7afe118:P=1cd:A=en-devtoken:V=2:H=022dccc3dc134b4f9abc497949a53a9b"
+
 # 获取电脑剪切板图片
 image_path = "screen.png"
 image = ImageGrab.grabclipboard()

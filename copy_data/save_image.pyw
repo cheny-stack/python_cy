@@ -13,7 +13,7 @@ import evernote.edam.type.ttypes as Types
 dateTime = time.strftime('%Y%m%d%H%M%S', time.localtime(time.time()))
 image_name = "screenshot_" + dateTime + ".png"
 # 获取电脑剪切板图片
-image_path = "/Users/cheny/Library/Mobile Documents/com~apple~CloudDocs/截图/" + image_name
+image_path = "C:/Users/montnets/iCloudDrive/图片库/" + image_name
 image = ImageGrab.grabclipboard()
 if isinstance(image, Image.Image):
     print("Image: size : %s, mode: %s" % (image.size, image.mode))
