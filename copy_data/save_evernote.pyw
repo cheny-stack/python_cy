@@ -74,7 +74,7 @@ def get_image_data():
 def makeNote(authToken, noteStore, noteTitle, parentNotebook=None):
     nBody = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
     nBody += "<!DOCTYPE en-note SYSTEM \"http://xml.evernote.com/pub/enml2.dtd\">"
-    nBody += "<en-note>%s</en-note>" % noteTitle
+    nBody += "<en-note></en-note>"
 
     ## Create note object
     ourNote = Types.Note()
