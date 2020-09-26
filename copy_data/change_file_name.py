@@ -3,7 +3,7 @@ import os
 
 
 
-dirName = 'F:/学习\人工智能/4、Visual Recognition & Understanding'
+dirName = 'F:/学习/3、Applied AI with DeepLearning'
 listOfFiles = list()
 for (dirpath, dirnames, filenames) in os.walk(dirName):
     listOfFiles += [os.path.join(dirpath, file) for file in filenames]
@@ -16,4 +16,5 @@ for elem in listOfFiles:
         file_name_new = file_name_new.replace("[baidu-en-zh] ", "")
         print(elem)
         print(os.path.join(file_dir, file_name_new))
-        os.rename(elem, os.path.join(file_dir, file_name_new))
+        if not os.path.exists(os.path.join(file_dir, file_name_new)):
+            os.rename(elem, os.path.join(file_dir, file_name_new))

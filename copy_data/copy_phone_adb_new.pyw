@@ -14,7 +14,8 @@ data = re.sub(r"\n链接.*\n", "\n", str(data))
 data = re.sub(r"\n来源.*\n", "\n", str(data))
 data = re.sub(r"\n著作权归.*\n", "\n", str(data))
 
-data = re.sub(r"[-_\r\n\"*]", "", str(data))
+#data = re.sub(r"[-_\r\n\"*]", "", str(data))
+data = re.sub(r"[-_\"*]", "", str(data))
 
 # print(data)
 # sys. exit(0)
