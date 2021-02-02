@@ -9,7 +9,7 @@ from evernote.edam.notestore import NoteStore
 import evernote.edam.type.ttypes as Types
 from PIL import Image, ImageGrab
 
-note_name = "算法第四版Course课程"
+note_name = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
 auth_token = ""
 
 
