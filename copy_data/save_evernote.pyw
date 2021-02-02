@@ -9,8 +9,8 @@ from evernote.edam.notestore import NoteStore
 import evernote.edam.type.ttypes as Types
 from PIL import Image, ImageGrab
 
-note_name = "202008随记"
-auth_token = "S=s34:U=6f9a64:E=173f27997dd:C=173ce6d10a8:P=1cd:A=en-devtoken:V=2:H=e50231d204ca9d81e5b52ac68a4d1ccd"
+note_name = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+auth_token = ""
 
 
 def build_file(path):
@@ -64,27 +64,27 @@ def get_image_data():
         image.save(image_path)
         file_info = build_file(image_path)
         image_data['file_info'] = file_info
-        image_data['text'] = '<en-media type="' + file_info["resource"].mime + '" hash="' + file_info["hashHex"] + '"/><div><br/></div>'
+        image_data['text'] = '<en-media type="' + file_info["resource"].mime + '" hash="' + file_info["hashHex"] + '"/>'
         return image_data
     else:
         print("没有截图")
         return None
 
 
-# def makeNote(authToken, noteStore, noteTitle, parentNotebook=None):
-#     nBody = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
-#     nBody += "<!DOCTYPE en-note SYSTEM \"http://xml.evernote.com/pub/enml2.dtd\">"
-#     nBody += "<en-note></en-note>"
-#
-#     ## Create note object
-#     ourNote = Types.Note()
-#     ourNote.title = noteTitle
-#     ourNote.content = nBody
-#
-#     ## parentNotebook is optional; if omitted, default notebook is used
-#     if parentNotebook and hasattr(parentNotebook, 'guid'):
-#         ourNote.notebookGuid = parentNotebook.guid
-#     noteStore.createNote(authToken, ourNote)
+def makeNote(authToken, noteStore, noteTitle, parentNotebook=None):
+    nBody = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+    nBody += "<!DOCTYPE en-note SYSTEM \"http://xml.evernote.com/pub/enml2.dtd\">"
+    nBody += "<en-note></en-note>"
+
+    ## Create note object
+    ourNote = Types.Note()
+    ourNote.title = noteTitle
+    ourNote.content = nBody
+
+    ## parentNotebook is optional; if omitted, default notebook is used
+    if parentNotebook and hasattr(parentNotebook, 'guid'):
+        ourNote.notebookGuid = parentNotebook.guid
+    noteStore.createNote(authToken, ourNote)
 
 
 def remote_search(auth_token, note_store, search_string):
@@ -112,12 +112,12 @@ print(user.username)
 note_store = client.get_note_store()
 # search for the note
 note_list = remote_search(auth_token, note_store, "intitle:" + note_name)
-# # 如果没有创建一条
-# if note_list.totalNotes == 0:
-#     print("新建笔记: %s" % note_name)
-#     makeNote(auth_token, note_store, note_name)
-#     print("新建笔记 ok")
-#     note_list = remote_search(auth_token, note_store, "intitle:" + note_name)
+# 如果没有创建一条
+if note_list.totalNotes == 0:
+    print("新建笔记: %s" % note_name)
+    makeNote(auth_token, note_store, note_name)
+    print("新建笔记 ok")
+    note_list = remote_search(auth_token, note_store, "intitle:" + note_name)
 
 # add tag to notes found
 for note in note_list.notes:
