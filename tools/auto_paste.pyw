@@ -5,7 +5,7 @@ import win32api
 import win32gui, win32com.client
 import win32con
 import pyperclip as pyperclip
-
+import re
 
 def zhanTie():
     win32api.keybd_event(17, 0, 0, 0)  # ctrl键位码是17
@@ -19,7 +19,7 @@ def clear():
     data = pyperclip.paste()
     pyperclip.copy(' ')
     print(data)
-    # data = re.sub(r"[\r\n\s]", "", str(data))
+    data = re.sub(r"[\r\n\s]", "", str(data))
     # print(data)
     pyperclip.copy(data + " ")
 
