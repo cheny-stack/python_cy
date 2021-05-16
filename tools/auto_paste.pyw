@@ -19,6 +19,10 @@ def clear():
     data = pyperclip.paste()
     pyperclip.copy(' ')
     print(data)
+    # data = re.sub(r"\n作者.*\n", "\n", str(data))
+    sub_str = "\n作者"
+    if sub_str in data:
+        data = data[:data.index(sub_str)]
     data = re.sub(r"[\r\n\s]", "", str(data))
     # print(data)
     pyperclip.copy(data + " ")
