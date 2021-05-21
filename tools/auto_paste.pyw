@@ -2,10 +2,11 @@
 import sys
 
 import win32api
-import win32gui, win32com.client
+import win32gui
 import win32con
 import pyperclip as pyperclip
 import re
+import keyboard
 
 def zhanTie():
     win32api.keybd_event(17, 0, 0, 0)  # ctrl键位码是17
@@ -29,7 +30,7 @@ def clear():
 
 
 # para_hld = win32gui.FindWindow(None, "GDI+ Window (TencentDocs.exe)")# 1836416
-para_hld = win32gui.FindWindow(None, "同步窗口")
+para_hld = win32gui.FindWindow(None, "同步窗口 - 腾讯文档")
 print("窗口句柄：" + str(para_hld))
 
 title = win32gui.GetWindowText(para_hld)
@@ -40,8 +41,10 @@ print("标题：" + title)
 print("classname：" + classname)
 
 win32gui.SetForegroundWindow(para_hld)
-shell = win32com.client.Dispatch("WScript.Shell")
-
-shell.SendKeys('^a')
-clear()
-zhanTie()
+# shell = win32com.client.Dispatch("WScript.Shell")
+#
+# shell.SendKeys('^a')
+keyboard.press_and_release("ctrl+A")
+keyboard.press_and_release("ctrl+V")
+# clear()
+# zhanTie()
