@@ -21,7 +21,9 @@ def clear():
 
 def save_paste():
     data = pyperclip.paste()
-    data = re.sub(r"[\r\n\s]", "", str(data))
+    # data = re.sub(r"[\r\n\s]", "", str(data))
+    data = re.sub(r"\\textit", "", str(data))
+    data = re.sub(r"{.*?\}", "", str(data))
     filename = old_file
     with open(filename, 'a', encoding='utf-8') as out:
         out.truncate(0)
