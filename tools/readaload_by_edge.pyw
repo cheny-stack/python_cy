@@ -12,7 +12,7 @@ file_name = "temp.txt"
 
 
 def clear():
-    bad_words = ['作者：', '链接：', '来源：', '著作权归作']
+    bad_words = ['作者：', '链接：', '来源：', '著作权归']
     with open(old_file,  encoding='utf-8') as oldfile, open(file_name, 'w',  encoding='utf-8') as newfile:
         for line in oldfile:
             if not any(bad_word in line for bad_word in bad_words):
@@ -21,6 +21,7 @@ def clear():
 
 def save_paste():
     data = pyperclip.paste()
+    data = re.sub(r"[\r\n\s]", "", str(data))
     filename = old_file
     with open(filename, 'a', encoding='utf-8') as out:
         out.truncate(0)
