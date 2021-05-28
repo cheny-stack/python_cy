@@ -4,6 +4,7 @@ import win32gui
 import pyperclip as pyperclip
 import re
 import keyboard
+import argparse
 
 
 old_file = "old.txt"
@@ -32,12 +33,16 @@ def save_paste():
 save_paste()
 
 # 将edge浏览器置顶，执行自动化操作
-para_hld = win32gui.FindWindow(None, "temp.txt - 个人 - Microsoft​ Edge")
+parser = argparse.ArgumentParser(description='manual to this script')
+parser.add_argument('--window-title', type=str, default= "temp.txt - 个人 - Microsoft​ Edge")
+args = parser.parse_args()
+
+print("窗口名：" + args.window_title)
+
+para_hld = win32gui.FindWindow(None, args.window_title)
 print("窗口句柄：" + str(para_hld))
 title = win32gui.GetWindowText(para_hld)
 classname = win32gui.GetClassName(para_hld)
-print("标题：" + title)
-print("classname：" + classname)
 win32gui.SetForegroundWindow(para_hld)
 
 # 执行浏览器刷新快捷键
