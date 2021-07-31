@@ -27,7 +27,7 @@ data = clear(data)
 
 # print(data)
 
-# 生成脚本文件
+# 生成脚本文件生成脚本文件 打开开发者，显示指针位置
 cmd_str = 'am broadcast -a clipper.set -e text "' + data + '"\n' \
           + '\nsleep 0.2\ninput tap 396 538\n' \
           + 'exit\n'

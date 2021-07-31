@@ -33,6 +33,7 @@ def save_paste():
     clear()
 
 
+
 # 保存剪切板内容到文件
 save_paste()
 
