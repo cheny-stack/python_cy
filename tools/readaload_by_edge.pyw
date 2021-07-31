@@ -9,10 +9,10 @@ import argparse
 
 old_file = "old.txt"
 file_name = "temp.txt"
+bad_words = ['作者：', '链接：', '来源：', '著作权归']
 
 
 def clear():
-    bad_words = ['作者：', '链接：', '来源：', '著作权归']
     with open(old_file,  encoding='utf-8') as oldfile, open(file_name, 'w',  encoding='utf-8') as newfile:
         for line in oldfile:
             if not any(bad_word in line for bad_word in bad_words):
@@ -21,7 +21,8 @@ def clear():
 
 def save_paste():
     data = pyperclip.paste()
-    # data = re.sub(r"[\r\n\s]", "", str(data))
+    if not any(x in data for x in bad_words):
+        data = re.sub(r"[\r\n\s]", "", str(data))
     data = re.sub(r"\\textit", "", str(data))
     data = re.sub(r"{.*?\}", "", str(data))
     filename = old_file
