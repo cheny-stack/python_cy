@@ -10,7 +10,7 @@ import evernote.edam.type.ttypes as Types
 from PIL import Image, ImageGrab
 
 note_name = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-auth_token = ""
+auth_token = "S=s34:U=6f9a64:E=1778637f97e:C=177622b7458:P=1cd:A=en-devtoken:V=2:H=cf9bcd32f438244b9b633ed745be8c14"
 
 
 def build_file(path):
