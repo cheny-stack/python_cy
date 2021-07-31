@@ -16,6 +16,7 @@ def clear():
     with open(old_file,  encoding='utf-8') as oldfile, open(file_name, 'w',  encoding='utf-8') as newfile:
         for line in oldfile:
             if not any(bad_word in line for bad_word in bad_words):
+                line = re.sub(r"[\r\n\s]", "", str(line))
                 newfile.write(line)
 
 
@@ -32,13 +33,13 @@ def save_paste():
     clear()
 
 
-
 # 保存剪切板内容到文件
 save_paste()
 
 # 将edge浏览器置顶，执行自动化操作
 parser = argparse.ArgumentParser(description='manual to this script')
-parser.add_argument('--window-title', type=str, default= "temp.txt - 个人 - Microsoft​ Edge")
+parser.add_argument('--window-title', type=str,
+                    default="temp.txt - 个人 - Microsoft​ Edge")
 args = parser.parse_args()
 
 print("窗口名：" + args.window_title)
