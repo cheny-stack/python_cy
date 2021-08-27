@@ -28,6 +28,11 @@ def sendData(data):
     response = requests.post(url, data=json.dumps(pyload), headers=headers).text
     print(response)
 
+def run_shortcut():
+    proxies = {'http': 'http://localhost:10809', 'https': 'http://localhost:10809'}
+    url = "https://api.pushcut.io/8s_ozO4VmXmJklpB3P51S/execute?shortcut=Audio%20texte"
+    response = requests.post(url, proxies=proxies, verify=False).text
+    print(response)
 
 from PyQt5.QtWidgets import *
 
@@ -45,6 +50,7 @@ def change_deal():
         print(data.text())
         data = clear(data.text())
         sendData(data)
+        # run_shortcut()
 
 # 监听剪切板变动
 clipboard.dataChanged.connect(change_deal)
