@@ -2,7 +2,6 @@
 #!/usr/bin/python
 import time
 import win32gui,win32com.client
-import pyperclip as pyperclip
 import re
 import keyboard
 import argparse
@@ -11,19 +10,19 @@ import argparse
 old_file = "old.txt"
 file_name = "temp.txt"
 bad_words = ['作者：', '链接：', '来源：', '著作权归']
-
+file_size = 0
 
 def clear():
     with open(old_file,  encoding='utf-8') as oldfile, open(file_name, 'w',  encoding='utf-8') as newfile:
         for line in oldfile:
             if not any(bad_word in line for bad_word in bad_words):
-                line = re.sub(r"[\r\n\s]", "", str(line))
+                # line = re.sub(r"[\r\n\s]", "", str(line))
                 newfile.write(line)
 
 
 def save_paste(data):
-    if not any(x in data for x in bad_words):
-        data = re.sub(r"[\r\n\s]", "", str(data))
+    # if not any(x in data for x in bad_words):
+    #     data = re.sub(r"[\r\n\s]", "", str(data))
     data = re.sub(r"\\textit", "", str(data))
     data = re.sub(r"{.*?\}", "", str(data))
     filename = old_file
@@ -48,6 +47,7 @@ def run_edge():
     win32gui.SetForegroundWindow(para_hld)
 
     # 执行浏览器刷新快捷键
+    # keyboard.press_and_release("ctrl+R")
     keyboard.press_and_release("ctrl+R")
     time.sleep(1)
     # 执行浏览器朗读快捷键
@@ -61,13 +61,14 @@ clipboard = app.clipboard()
 
 # 当剪切板变动会执行该方法
 def change_deal():
+    global file_size
     data = clipboard.mimeData()
 	
 	# 获取剪切板内容格式
     print(data.formats())
     # 如果是文本格式，把内容打印出来
-
-    if(len(data.text()) > 10 and 'text/plain' in data.formats()):
+    if(len(data.text()) != file_size and 'text/plain' in data.formats()):
+        file_size = len(data.text())
         # 保存剪切板内容到文件
         data = data.text()
         save_paste(data)
