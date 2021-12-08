@@ -8,7 +8,7 @@ import argparse
 
 
 old_file = "old.txt"
-file_name = "temp.txt"
+file_name = "temp.html"
 bad_words = ['作者：', '链接：', '来源：', '著作权归']
 file_size = 0
 
@@ -35,7 +35,7 @@ def run_edge():
     # 将edge浏览器置顶，执行自动化操作
     parser = argparse.ArgumentParser(description='manual to this script')
     parser.add_argument('--window-title', type=str,
-                        default="temp.txt - 个人 - Microsoft​ Edge")
+                        default="temp.html - 个人 - Microsoft​ Edge")
     args = parser.parse_args()
 
     print("窗口名：" + args.window_title)
