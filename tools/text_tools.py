@@ -10,8 +10,8 @@ def clear(old_str):
         res = ""
         lines = old_str.splitlines()
         for line in lines:
-            if len(line) > 5:
-                res += line + "\n"
+            if len(line) > 7:
+                res += "#### " + line + "\n\n"
         return res
 
 data = pyperclip.paste()
