@@ -5,6 +5,7 @@ import win32gui,win32com.client
 import re
 import keyboard
 import argparse
+import pythoncom
 
 
 old_file = "old.txt"
@@ -49,7 +50,7 @@ def run_edge():
     # 执行浏览器刷新快捷键
     # keyboard.press_and_release("ctrl+R")
     keyboard.press_and_release("ctrl+R")
-    time.sleep(1)
+    time.sleep(1.5)
     # 执行浏览器朗读快捷键
     keyboard.press_and_release("ctrl+shift+u")
     
@@ -61,13 +62,14 @@ clipboard = app.clipboard()
 
 # 当剪切板变动会执行该方法
 def change_deal():
+    pythoncom.CoInitialize()
     global file_size
     data = clipboard.mimeData()
 	
 	# 获取剪切板内容格式
     print(data.formats())
     # 如果是文本格式，把内容打印出来
-    if(len(data.text()) != file_size and 'text/plain' in data.formats()):
+    if('text/plain' in data.formats()):
         file_size = len(data.text())
         # 保存剪切板内容到文件
         data = data.text()
@@ -76,5 +78,7 @@ def change_deal():
 
 
 # 监听剪切板变动 alt_click
-clipboard.dataChanged.connect(change_deal)
+# clipboard.dataChanged.connect(change_deal)
+keyboard.add_hotkey('`', change_deal, args=None)
+keyboard.add_hotkey('0', change_deal, args=None)
 app.exec_()
