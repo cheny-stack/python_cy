@@ -4,7 +4,7 @@ from PIL import ImageGrab, Image
 import time
 import pyperclip
 # pip install --index-url https://pypi.tuna.tsinghua.edu.cn/simple/ pyperclip
-auth = oss2.Auth('LTAI4GF4KdU9N4aJkG9hKMfq', 'BQ5WPZYo24a2HGtqxSfMtawxh8pMay')
+# auth =
 bucket = oss2.Bucket(auth, 'https://oss-cn-beijing.aliyuncs.com', 'b-ccy')
 path = "D:/temp/"
 
