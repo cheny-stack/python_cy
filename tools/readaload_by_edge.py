@@ -48,9 +48,10 @@ def run_edge():
     win32gui.SetForegroundWindow(para_hld)
 
     # 执行浏览器刷新快捷键
-    # keyboard.press_and_release("ctrl+R")
     keyboard.press_and_release("ctrl+R")
-    time.sleep(1.5)
+    time.sleep(0.5)
+    keyboard.press_and_release("ctrl+R")
+    time.sleep(0.5)
     # 执行浏览器朗读快捷键
     keyboard.press_and_release("ctrl+shift+u")
     
