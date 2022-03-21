@@ -1,4 +1,4 @@
-import keyboard
+from pynput.keyboard import Key, Controller
 import time
 from PyQt5.QtWidgets import *
 
@@ -12,7 +12,8 @@ if('text/plain' in data.formats()):
     print(data)
     print("睡眠3秒")
     time.sleep(3)
-    keyboard.write(data)
+    keyboard = Controller()
+    keyboard.type(data)
     # for c in data:
     #     #do something with c
     #     time.sleep(0.1)
