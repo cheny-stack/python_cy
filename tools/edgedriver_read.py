@@ -1,0 +1,77 @@
+import time
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
+
+import sys
+import keyboard
+
+bad_words = ['作者：', '链接：', '来源：', '著作权归']
+file_size = 0
+
+# 命令行运行 msedge --remote-debugging-port=9222
+
+# 使用网页驱动来运行chrome浏览器
+chrome_options = webdriver.EdgeOptions()
+chrome_options.add_experimental_option("debuggerAddress", "127.0.0.1:9222")
+ 
+driver = webdriver.Edge("C:/chenyun/tools/edgedriver/msedgedriver.exe",options=chrome_options)
+all_windows = driver.window_handles
+print("所有窗口:")
+print(all_windows)
+read_window = None
+for handle in all_windows:
+    driver.switch_to.window(handle)
+    try:
+        textarea = driver.find_element_by_xpath('//*[@id="input-5"]')
+        read_window = handle
+    except:
+        print('窗口错误')
+if(handle == None):
+    print("没有找到朗读窗口")
+    sys.exit(0)
+
+driver.switch_to.window(read_window)
+# 设置速度
+# 激活下拉框
+driver.find_element_by_xpath('//*[@id="app"]/div[1]/main/div/div/div[1]/div[2]/div/div[1]/div[1]/div/div/div/div[1]/div[1]/div[1]').click()
+time.sleep(1)
+# 提取此下拉框中的所有元素
+lis=driver.find_elements_by_xpath('//*[@id="list-8"]/div')
+# 判断需要的元素在哪里，点击
+for li in lis:
+    text = li.find_element_by_tag_name('div').text
+    print("语音：" + text)
+    if "Microsoft Yunyang Online (Natural) - Chinese (Mainland) (zh-CN)" == text:
+        li.click()
+        break
+
+def reading(data):
+    textarea = driver.find_element_by_xpath('//*[@id="input-5"]')
+    textarea.send_keys(Keys.CONTROL + "a")
+    textarea.send_keys(Keys.DELETE)
+    textarea.send_keys(data)
+    btn = driver.find_element_by_xpath('//*[@id="app"]/div/main/div/div/div[1]/div[2]/div/div[2]/button[1]')
+    print(btn)
+    btn.click()
+
+from PyQt5.QtWidgets import *
+
+app = QApplication([])
+clipboard = app.clipboard()
+
+# 当剪切板变动会执行该方法
+def change_deal():
+    global file_size
+    data = clipboard.mimeData()
+	
+	# 获取剪切板内容格式
+    print(data.formats())
+    # 如果是文本格式，把内容打印出来
+    if('text/plain' in data.formats()):
+        file_size = len(data.text())
+        # 保存剪切板内容到文件
+        data = data.text()
+        reading(data)
+
+keyboard.add_hotkey('0', change_deal, args=None)
+app.exec_()
