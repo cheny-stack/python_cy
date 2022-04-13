@@ -41,7 +41,7 @@ lis=driver.find_elements_by_xpath('//*[@id="list-8"]/div')
 for li in lis:
     text = li.find_element_by_tag_name('div').text
     print("语音：" + text)
-    if "Microsoft Yunyang Online (Natural) - Chinese (Mainland) (zh-CN)" == text:
+    if "Microsoft Xiaoxiao Online (Natural) - Chinese (Mainland) (zh-CN)" == text:
         li.click()
         break
 
