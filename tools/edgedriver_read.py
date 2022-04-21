@@ -33,17 +33,17 @@ if(handle == None):
 driver.switch_to.window(read_window)
 # 设置速度
 # 激活下拉框
-driver.find_element_by_xpath('//*[@id="app"]/div[1]/main/div/div/div[1]/div[2]/div/div[1]/div[1]/div/div/div/div[1]/div[1]/div[1]').click()
-time.sleep(1)
-# 提取此下拉框中的所有元素
-lis=driver.find_elements_by_xpath('//*[@id="list-8"]/div')
-# 判断需要的元素在哪里，点击
-for li in lis:
-    text = li.find_element_by_tag_name('div').text
-    print("语音：" + text)
-    if "Microsoft Xiaoxiao Online (Natural) - Chinese (Mainland) (zh-CN)" == text:
-        li.click()
-        break
+# driver.find_element_by_xpath('//*[@id="app"]/div[1]/main/div/div/div[1]/div[2]/div/div[1]/div[1]/div/div/div/div[1]/div[1]/div[1]').click()
+# time.sleep(1)
+# # 提取此下拉框中的所有元素
+# lis=driver.find_elements_by_xpath('//*[@id="list-8"]/div')
+# # 判断需要的元素在哪里，点击
+# for li in lis:
+#     text = li.find_element_by_tag_name('div').text
+#     print("语音：" + text)
+#     if "Microsoft Xiaoxiao Online (Natural) - Chinese (Mainland) (zh-CN)" == text:
+#         li.click()
+#         break
 
 def reading(data):
     textarea = driver.find_element_by_xpath('//*[@id="input-5"]')
