@@ -11,7 +11,7 @@ print("复制数据：" + data)
 datas = data.split("@@")
 
 if(len(datas) != 2):
-    print("复制格式错误，请按\"key@@value\" 格式复制，示例:  13110051005_123qwe@@5346FD8D0EE4C4CAEC5B4F1E9EC91B6A4B8777D16400DEFEAE2A3CE0D9ED722AEDA0E0CA751FAF9A")
+    print("复制格式错误，请按\"key@@value\" 格式复制，其中key为:\"登录账号_登录密码\"，示例:  13110051005_123qwe@@5346FD8D0EE4C4CAEC5B4F1E9EC91B6A4B8777D16400DEFEAE2A3CE0D9ED722AEDA0E0CA751FAF9A")
     sys.exit(0)
 
 key = datas[0]
