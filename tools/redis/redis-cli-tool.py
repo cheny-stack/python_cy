@@ -15,11 +15,11 @@ if(len(datas) != 2):
     sys.exit(0)
 
 key = datas[0]
-value = datas[1]
+value = "\""+ datas[1] + "\""
+
 
 r = redis.Redis(host='192.169.7.52',port=6379,password='')
-
 print("设置redis值key:{0}  value{1}".format(key, value))
-r.setex(name=key, value = str(value) , time = 3600)
+r.setex(name=key, value = value , time = 3600)
 
 print("获取设置后的值:{0}".format(r.get(key).decode('utf8')))
