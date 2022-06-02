@@ -13,12 +13,12 @@ file_name = "temp.html"
 bad_words = ['作者：', '链接：', '来源：', '0']
 file_size = 0
 
-def clear():
-    with open(old_file,  encoding='utf-8') as oldfile, open(file_name, 'w',  encoding='utf-8') as newfile:
-        for line in oldfile:
-            if not any(bad_word in line for bad_word in bad_words):
-                # line = re.sub(r"[\r\n\s]", "", str(line))
-                newfile.write(line)
+# def clear():
+#     with open(old_file,  encoding='utf-8') as oldfile, open(file_name, 'w',  encoding='utf-8') as newfile:
+#         for line in oldfile:
+#             if not any(bad_word in line for bad_word in bad_words):
+#                 # line = re.sub(r"[\r\n\s]", "", str(line))
+#                 newfile.write(line)
 
 
 def save_paste(data):
@@ -26,11 +26,10 @@ def save_paste(data):
     #     data = re.sub(r"[\r\n\s]", "", str(data))
     data = re.sub(r"\\textit", "", str(data))
     data = re.sub(r"{.*?\}", "", str(data))
-    filename = old_file
+    filename = file_name
     with open(filename, 'a', encoding='utf-8') as out:
         out.truncate(0)
         out.write(data + '\n')
-    clear()
     
 def run_edge():
     # 将edge浏览器置顶，执行自动化操作
@@ -53,7 +52,8 @@ def run_edge():
     keyboard.press_and_release("ctrl+R")
     time.sleep(0.5)
     # 执行浏览器朗读快捷键
-    keyboard.press_and_release("alt+R")
+    # keyboard.press_and_release("alt+R")
+    keyboard.press_and_release("ctrl+shift+u")
     
 
 from PyQt5.QtWidgets import *
