@@ -10,7 +10,7 @@ import pythoncom
 
 old_file = "old.txt"
 file_name = "temp.html"
-bad_words = ['作者：', '链接：', '来源：', '著作权归']
+bad_words = ['作者：', '链接：', '来源：', '0']
 file_size = 0
 
 def clear():
@@ -53,7 +53,7 @@ def run_edge():
     keyboard.press_and_release("ctrl+R")
     time.sleep(0.5)
     # 执行浏览器朗读快捷键
-    keyboard.press_and_release("ctrl+shift+u")
+    keyboard.press_and_release("alt+R")
     
 
 from PyQt5.QtWidgets import *
@@ -79,6 +79,5 @@ def change_deal():
 
 
 # 监听剪切板变动 alt_click
-# clipboard.dataChanged.connect(CHANGE_DEAL)
 keyboard.add_hotkey('0', change_deal, args=None)
 app.exec_()
