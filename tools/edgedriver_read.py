@@ -1,7 +1,7 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-
+import re
 import sys
 import keyboard
 
@@ -45,6 +45,21 @@ driver.switch_to.window(read_window)
 #         li.click()
 #         break
 
+# 获取电脑剪切板内容
+def clear(old_str):
+        bad_words = ['作者：', '链接：', '来源：', '著作权归','版权归作者所有']
+        res = ""
+        lines = old_str.splitlines()
+        for line in lines:
+            if not any(bad_word in line for bad_word in bad_words):
+    #            line = re.sub(r"千", "于", str(line))
+    #            line = re.sub(r"([\u4e00-\u9fa5]+)\s+", "", str(line))
+    #            line = re.sub(r"\s+([\u4e00-\u9fa5]+)", "", str(line))
+                line = re.sub(r"[\r\n\s\(\)“”\"]", "", str(line))
+                # res += (line)
+                res += (line + "\n")
+        return res
+
 def reading(data):
     textarea = driver.find_element_by_xpath('//*[@id="input-5"]')
     textarea.send_keys(Keys.CONTROL + "a")
@@ -71,6 +86,7 @@ def change_deal():
         file_size = len(data.text())
         # 保存剪切板内容到文件
         data = data.text()
+        data = clear(data)
         reading(data)
 
 keyboard.add_hotkey('0', change_deal, args=None)

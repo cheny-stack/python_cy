@@ -11,7 +11,7 @@ print("复制数据：" + data)
 datas = data.split("@@")
 
 if(len(datas) != 2):
-    print("复制格式错误，请按\"key@@value\" 格式复制，其中key为:\"登录账号_登录密码\"，示例:  13110051005_123qwe@@5346FD8D0EE4C4CAEC5B4F1E9EC91B6A4B8777D16400DEFEAE2A3CE0D9ED722AEDA0E0CA751FAF9A")
+    print("复制格式错误，请按\"key@@value\" 格式复制，其中key为:\"登录账号_登录密码\"，示例:  13110051005_admin123@@7AB1E17598EF8A8141943DF6EA3AEE4B5F556156C0D1DD3D655DBDFB67F40840BCDF0E9768694BB9 ")
     sys.exit(0)
 
 key = datas[0]
@@ -23,3 +23,4 @@ print("设置redis值key:{0}  value{1}".format(key, value))
 r.setex(name=key, value = value , time = 3600)
 
 print("获取设置后的值:{0}".format(r.get(key).decode('utf8')))
+
