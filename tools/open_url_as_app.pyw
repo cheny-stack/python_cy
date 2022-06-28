@@ -1,3 +1,4 @@
+import sys
 import time
 from PyQt5.QtWidgets import *
 # Python code to find the URL from an input string
@@ -27,10 +28,12 @@ if('text/plain' in data.formats()):
         print("Urls: ", urls)
         url = urls[0]
         print(url)
-        cmd = 'start msedge --new-window --app=%s'
+        cmd = '\"C:\Program Files\Google\Chrome\Application\chrome_proxy.exe\" --profile-directory=Default --app=%s'
         cmd =cmd%(url)
         print("cmd:" + cmd)
-        print(os.system('cmd /k '+ cmd))   
+        subprocess.call(cmd + ' &', shell=True)
+        # print(os.system('cmd /k '+ cmd + ' &'))   
+        sys.exit()
     else:
         print("未找到链接")
     
