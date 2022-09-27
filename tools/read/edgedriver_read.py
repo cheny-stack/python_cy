@@ -8,7 +8,7 @@ import keyboard
 bad_words = ['作者：', '链接：', '来源：', '著作权归']
 file_size = 0
 
-# 命令行运行 msedge --remote-debugging-port=9222 http://81.71.26.244:8089/
+# 命令行运行 msedge --remote-debugging-port=9222 https://b-ccy.oss-cn-beijing.aliyuncs.com/my/dist/index.html
 
 # 使用网页驱动来运行chrome浏览器
 chrome_options = webdriver.EdgeOptions()
