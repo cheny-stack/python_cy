@@ -1,5 +1,6 @@
 import time
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import re
 import sys
@@ -22,7 +23,7 @@ read_window = None
 for handle in all_windows:
     driver.switch_to.window(handle)
     try:
-        textarea = driver.find_element_by_xpath('//*[@id="input-5"]')
+        textarea = driver.find_element(By.XPATH, '//*[@id="input-5"]')
         read_window = handle
     except:
         print('窗口错误')
@@ -61,11 +62,11 @@ def clear(old_str):
         return res
 
 def reading(data):
-    textarea = driver.find_element_by_xpath('//*[@id="input-5"]')
+    textarea = driver.find_element(By.XPATH, '//*[@id="input-5"]')
     textarea.send_keys(Keys.CONTROL + "a")
     textarea.send_keys(Keys.DELETE)
     textarea.send_keys(data)
-    btn = driver.find_element_by_xpath('//*[@id="app"]/div/main/div/div/div[1]/div[2]/div/div[2]/button[1]')
+    btn = driver.find_element(By.XPATH,'//*[@id="app"]/div/main/div/div/div[1]/div[2]/div/div[2]/button[1]')
     print(btn)
     btn.click()
 
