@@ -10,9 +10,9 @@ bad_words = ['作者：', '链接：', '来源：', '著作权归']
 file_size = 0
 
 def drag_select():
-    pyautogui.moveTo(10, 180)
+    pyautogui.moveTo(10, 112)
     pyautogui.mouseDown(button='left')
-    pyautogui.moveTo(10, 638, 1)
+    pyautogui.moveTo(871, 636, 1)
     pyautogui.mouseUp(button='left')
 
 # 命令行运行 msedge --remote-debugging-port=9222 https://b-ccy.oss-cn-beijing.aliyuncs.com/my/dist/index.html
@@ -54,7 +54,7 @@ driver.switch_to.window(read_window)
 
 # 获取电脑剪切板内容
 def clear(old_str):
-        bad_words = ['作者：', '链接：', '来源：', '著作权归','版权归作者所有']
+        bad_words = ['版权声明：','原文链接：','作者：', '链接：', '来源：', '著作权归','版权归作者所有']
         res = ""
         lines = old_str.splitlines()
         for line in lines:
@@ -63,8 +63,8 @@ def clear(old_str):
     #            line = re.sub(r"([\u4e00-\u9fa5]+)\s+", "", str(line))
     #            line = re.sub(r"\s+([\u4e00-\u9fa5]+)", "", str(line))
                 line = re.sub(r"[\r\n\s\(\)“”\"]", "", str(line))
-                # res += (line)
-                res += (line + "\n")
+                res += (line)
+                # res += (line + "\n")
         return res
 
 def reading(data):
