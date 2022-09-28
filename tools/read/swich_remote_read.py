@@ -2,6 +2,7 @@
 #!/usr/bin/python
 import time
 import win32gui,win32com.client
+from pynput.keyboard import Key, Controller
 import re
 import keyboard
 import argparse
@@ -28,9 +29,9 @@ def change_deal():
     shell = win32com.client.Dispatch("WScript.Shell")
     shell.SendKeys('%')
     win32gui.SetForegroundWindow(para_hld)
-
-    # 执行浏览器刷新快捷键
-    keyboard.press_and_release("0")
+    time.sleep(0.5)
+    con = Controller()
+    con.type("0")
     
 
 
