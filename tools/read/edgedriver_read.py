@@ -5,9 +5,15 @@ from selenium.webdriver.common.keys import Keys
 import re
 import sys
 import keyboard
-
+import pyautogui
 bad_words = ['作者：', '链接：', '来源：', '著作权归']
 file_size = 0
+
+def drag_select():
+    pyautogui.moveTo(10, 180)
+    pyautogui.mouseDown(button='left')
+    pyautogui.moveTo(10, 638, 1)
+    pyautogui.mouseUp(button='left')
 
 # 命令行运行 msedge --remote-debugging-port=9222 https://b-ccy.oss-cn-beijing.aliyuncs.com/my/dist/index.html
 
@@ -70,6 +76,8 @@ def reading(data):
     print(btn)
     btn.click()
 
+
+
 from PyQt5.QtWidgets import *
 
 app = QApplication([])
@@ -91,4 +99,5 @@ def change_deal():
         reading(data)
 
 keyboard.add_hotkey('0', change_deal, args=None)
+keyboard.add_hotkey('9', drag_select, args=None)
 app.exec_()
