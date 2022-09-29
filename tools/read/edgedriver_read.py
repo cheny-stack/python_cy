@@ -14,6 +14,8 @@ def drag_select():
     pyautogui.mouseDown(button='left')
     pyautogui.moveTo(871, 636, 1)
     pyautogui.mouseUp(button='left')
+    time.sleep(0.5)
+    change_deal()
 
 # 命令行运行 msedge --remote-debugging-port=9222 https://b-ccy.oss-cn-beijing.aliyuncs.com/my/dist/index.html
 
