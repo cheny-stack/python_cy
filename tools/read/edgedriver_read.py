@@ -75,7 +75,11 @@ def reading(data):
     textarea.send_keys(Keys.DELETE)
     textarea.send_keys(data)
     btn = driver.find_element(By.XPATH,'//*[@id="app"]/div/main/div/div/div[1]/div[2]/div/div[2]/button[1]')
-    print(btn)
+    pause = driver.find_elements(By.XPATH,"//*[contains(text(),'停止')]")
+    if len(pause) > 0:
+        print("暂停")
+        btn.click()
+    print("朗读")
     btn.click()
 
 
