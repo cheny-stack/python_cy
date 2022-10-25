@@ -29,7 +29,7 @@ read_window = None
 for handle in all_windows:
     driver.switch_to.window(handle)
     try:
-        textarea = driver.find_element(By.XPATH, '//*[@id="input-5"]')
+        textarea = driver.find_elements(By.XPATH, '//*[@id="input-5"]')
         read_window = handle
     except:
         print('窗口错误')
@@ -62,9 +62,10 @@ def clear(old_str):
     #            line = re.sub(r"千", "于", str(line))
     #            line = re.sub(r"([\u4e00-\u9fa5]+)\s+", "", str(line))
     #            line = re.sub(r"\s+([\u4e00-\u9fa5]+)", "", str(line))
-                line = re.sub(r"[\r\n\s\(\)“”\"]", "", str(line))
-                res += (line)
-                # res += (line + "\n")
+                # line = re.sub(r"[\r\n\s\(\)“”\"]", "", str(line))
+                line = re.sub(r"[#]", "", str(line))
+                # res += (line)
+                res += (line + "\n")
         return res
 
 def reading(data):
@@ -75,6 +76,13 @@ def reading(data):
     btn = driver.find_element(By.XPATH,'//*[@id="app"]/div/main/div/div/div[1]/div[2]/div/div[2]/button[1]')
     print(btn)
     btn.click()
+
+#检验是否含有中文字符
+def is_contains_chinese(strs):
+    for _char in strs:
+        if '\u4e00' <= _char <= '\u9fa5':
+            return True
+    return False
 
 
 
@@ -98,6 +106,6 @@ def change_deal():
         data = clear(data)
         reading(data)
 
-keyboard.add_hotkey('0', change_deal, args=None)
-keyboard.add_hotkey('9', drag_select, args=None)
+keyboard.add_hotkey('+', change_deal, args=None)
+# keyboard.add_hotkey('9', drag_select, args=None)
 app.exec_()

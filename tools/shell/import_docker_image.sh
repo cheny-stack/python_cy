@@ -26,7 +26,7 @@ docker load -i ${image_full_file_name}
 
 java_opts='1'
 if [[ "${image_name}" == "5g-aim-editor" ]] ; then
-    JAVA_OPTS='-Xmn2G -Xms4G -Xmx5G -XX:SurvivorRatio=8'
+    java_opts='-Xmn2G -Xms4G -Xmx5G -XX:SurvivorRatio=8'
 fi
 
 printf "\e[1;32m=======>JAVA_OPTS:[${java_opts}]。 \e[0m \n"
@@ -36,6 +36,6 @@ docker run --init -d --net=host --name ${image_name} \
 -v /opt/java/logs/${image_name}:/opt/java/logs/${image_name} -v /opt/java/${image_name}/config:/opt/java/${image_name}/config \
 -v /opt/java/${image_name}/mon_data:/opt/java/${image_name}/mon_data -v /opt/java/${image_name}/file:/opt/java/${image_name}/file \
 -e "SPRING_PROFILES_ACTIVE=prod"  \
--e "JAVA_OPTS='${java_opts}'" \
+-e "JAVA_OPTS=${java_opts}" \
 192.169.2.237:8004/5g-platform-test/${image_name}:${image_version}
 
