@@ -90,9 +90,12 @@ def is_contains_chinese(strs):
             return True
     return False
 
+def buttonClicked():
+    print("buttonClicked")
 
 
-from PyQt5.QtWidgets import *
+from PyQt5.QtWidgets import QMainWindow, QPushButton, QApplication
+from PyQt5 import QtCore
 
 app = QApplication([])
 clipboard = app.clipboard()
@@ -114,4 +117,14 @@ def change_deal():
 
 keyboard.add_hotkey('+', change_deal, args=None)
 # keyboard.add_hotkey('9', drag_select, args=None)
+
+window = QMainWindow()
+btn1 = QPushButton("朗读剪切板", window)
+btn1.move(30, 50)
+btn1.clicked.connect(change_deal) 
+window.statusBar()
+window.setGeometry(300, 300, 160, 150)
+window.setWindowTitle('朗读工具')
+window.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+window.show()  
 app.exec_()
