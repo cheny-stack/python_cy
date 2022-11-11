@@ -7,8 +7,10 @@ import pysrt
 from bs4 import BeautifulSoup
 import time
 import datetime
-srt_file = "temp.srt"
+
 from subprocess import run
+srt_file = "temp.srt"
+txt_file = "temp.txt"
 
 
 
