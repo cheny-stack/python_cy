@@ -63,7 +63,7 @@ def clear(old_str):
             if not any(bad_word in line for bad_word in bad_words):
     #            line = re.sub(r"千", "于", str(line))
     #            line = re.sub(r"([\u4e00-\u9fa5]+)\s+", "", str(line))
-    #            line = re.sub(r"\s+([\u4e00-\u9fa5]+)", "", str(line))
+                line = re.sub(r"\s+([\u4e00-\u9fa5]+)", "", str(line))
                 # line = re.sub(r"[\r\n\s\(\)“”\"]", "", str(line))
                 line = re.sub(r"[#]", "", str(line))
                 # res += (line)
