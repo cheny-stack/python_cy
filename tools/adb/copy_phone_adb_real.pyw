@@ -65,5 +65,5 @@ def change_deal():
 # 监听剪切板变动 alt_click
 # clipboard.dataChanged.connect(change_deal)
 # keyboard.add_hotkey('q', change_deal,  args=None)
-keyboard.add_hotkey('0', change_deal, args=None)
+keyboard.add_hotkey('+', change_deal, args=None)
 app.exec_()
