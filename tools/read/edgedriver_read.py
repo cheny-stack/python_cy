@@ -67,7 +67,7 @@ def clear(old_str):
                 # line = re.sub(r"[\r\n\s\(\)“”\"]", "", str(line))
                 line = re.sub(r"[#]", "", str(line))
                 # res += (line)
-                res += (line + "\n")
+                res += (line + "") # \n
         return res
 
 def reading(data):
@@ -115,7 +115,7 @@ def change_deal():
         data = clear(data)
         reading(data)
 
-keyboard.add_hotkey('+', change_deal, args=None)
+keyboard.add_hotkey('0', change_deal, args=None)
 # keyboard.add_hotkey('9', drag_select, args=None)
 
 # window = QMainWindow()

@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*
+import time
 import requests
 import json
 import pyperclip as pyperclip
@@ -17,7 +18,8 @@ def clear(old_str):
             #            line = re.sub(r"([\u4e00-\u9fa5]+)\s+", "", str(line))
             #            line = re.sub(r"\s+([\u4e00-\u9fa5]+)", "", str(line))
             line = re.sub(r"[\r\n\s\(\)“”\"]", "", str(line))
-            res += (line + "\n")
+            res += (line + ",")
+    res = res + 'ok ok ok ok********'
     return res
 
 def sendData(data):
@@ -37,6 +39,8 @@ def run_shortcut():
     print(response)
 
 def run_qq_adb():
+    change_deal()
+    time.sleep(1)
     print('手机qq朗读')
     # current_milli_time = lambda: int(round(time.time() * 1000))
     # print(subprocess.call("adb shell input tap 452 174", shell=True))
@@ -45,7 +49,7 @@ def run_qq_adb():
     # print(subprocess.call("adb shell input tap 952 191", shell=True))
     # print(subprocess.call("adb shell input tap 864 179", shell=True))
     print(subprocess.call("adb shell input tap 1006 149", shell=True))
-    print(subprocess.call("adb shell input tap 942 348", shell=True))
+    print(subprocess.call("adb shell input tap 533 1887", shell=True))
     
 from PyQt5.QtWidgets import *
 
@@ -66,6 +70,6 @@ def change_deal():
         # run_shortcut()
 
 # 监听剪切板变动
-clipboard.dataChanged.connect(change_deal)
+# clipboard.dataChanged.connect(change_deal)
 keyboard.add_hotkey('0', run_qq_adb, args=None)
 app.exec_()
