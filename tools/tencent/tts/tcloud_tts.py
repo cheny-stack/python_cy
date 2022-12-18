@@ -1,10 +1,13 @@
 # coding=UTF-8
+import io
 import requests
 import wave
 import json
 import time
 import os
 import simpleaudio as sa
+from pydub import AudioSegment
+from pydub.playback import play
 
 from request_util import request, authorization
 
@@ -46,24 +49,31 @@ def task_process(text):
         print(r.content)
         return
     '''
-    i = 1
-    timestr = time.strftime("%Y%m%d-%H%M%S")
-    file_name = 'voice/' + timestr + '.wav'
     t = time.time()
-
-    wavfile = wave.open(file_name, 'wb')
-    wavfile.setparams((1, 2, 16000, 0, 'NONE', 'NONE'))
-    for chunk in r.iter_content(1024):
-        if (i == 1) & (str(chunk).find("Error") != -1) :
-            print(chunk)
-            return 
-        i = i + 1
-        wavfile.writeframes(chunk)
-    wavfile.close()
+    song = AudioSegment.from_file(io.BytesIO(r.content), format="raw", 
+                                   frame_rate=16000, channels=1, 
+                                   sample_width=2,nframes=0).remove_dc_offset()                                  
     print(f'coast:{time.time() - t:.8f}s')
-    wav_file_path=os.getcwd() + '/' + file_name
-    # os.system("su cheny &&  vlc " + wav_file_path)
-    wave_obj = sa.WaveObject.from_wave_file(wav_file_path)
-    play_obj = wave_obj.play()
-    play_obj.wait_done()  # Wait until sound has finished playing
+    play(song)
+
+    # i = 1
+    # timestr = time.strftime("%Y%m%d-%H%M%S")
+    # file_name = 'voice/' + timestr + '.wav'
+    # t = time.time()
+
+    # wavfile = wave.open(file_name, 'wb')
+    # wavfile.setparams((1, 2, 16000, 0, 'NONE', 'NONE'))
+    # for chunk in r.iter_content(1024):
+    #     if (i == 1) & (str(chunk).find("Error") != -1) :
+    #         print(chunk)
+    #         return 
+    #     i = i + 1
+    #     wavfile.writeframes(chunk)
+    # wavfile.close()
+    # print(f'coast:{time.time() - t:.8f}s')
+    # wav_file_path=os.getcwd() + '/' + file_name
+    # # os.system("su cheny &&  vlc " + wav_file_path)
+    # wave_obj = sa.WaveObject.from_wave_file(wav_file_path)
+    # play_obj = wave_obj.play()
+    # play_obj.wait_done()  # Wait until sound has finished playing
 
