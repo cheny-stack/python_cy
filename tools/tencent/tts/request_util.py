@@ -17,7 +17,7 @@ class authorization:
     conf=configparser.ConfigParser()
     def init(self):
         print("init")
-        self.conf.read("C:/Users/47895/workspace/github/python_cy/tools/tencent/tts/conf/tcloud_auth.ini", encoding="UTF-8")
+        self.conf.read("tools/tencent/tts/conf/tcloud_auth.ini", encoding="UTF-8")
         self.AppId = self.conf.getint("authorization", "AppId")
         self.SecretId = self.conf.get("authorization", "SecretId")
         self.SecretKey = self.conf.get("authorization", "SecretKey")
@@ -65,7 +65,7 @@ class request:
     conf=configparser.ConfigParser()
     def init(self):
         print("init")
-        self.conf.read("C:/Users/47895/workspace/github/python_cy/tools/tencent/tts/conf/request_parameter.ini", encoding="UTF-8")
+        self.conf.read("tools/tencent/tts/conf/request_parameter.ini", encoding="UTF-8")
         self.Text = self.conf.get("parameter", "Text")
         self.Action = self.conf.get("parameter", "Action")
         self.Codec = self.conf.get("parameter", "Codec")

@@ -4,6 +4,7 @@ import wave
 import json
 import time
 import os
+import simpleaudio as sa
 
 from request_util import request, authorization
 
@@ -61,5 +62,8 @@ def task_process(text):
     wavfile.close()
     print(f'coast:{time.time() - t:.8f}s')
     wav_file_path=os.getcwd() + '/' + file_name
-    os.system("vlc " + wav_file_path)
+    # os.system("su cheny &&  vlc " + wav_file_path)
+    wave_obj = sa.WaveObject.from_wave_file(wav_file_path)
+    play_obj = wave_obj.play()
+    play_obj.wait_done()  # Wait until sound has finished playing
 

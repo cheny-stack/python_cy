@@ -8,7 +8,6 @@ from selenium.webdriver.common.keys import Keys
 import re
 import sys
 import keyboard
-import pyautogui
 bad_words = ['作者：', '链接：', '来源：', '著作权归']
 file_size = 0
 
