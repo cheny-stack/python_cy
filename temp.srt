@@ -1,0 +1,720 @@
+1
+00:00:00,100 --> 00:00:00,600
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>呃喂你好</size></color></font>
+
+2
+00:00:00,600 --> 00:00:01,333
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>是梁女士吗</size></color></font>
+
+3
+00:00:01,333 --> 00:00:02,599
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>啊对面试的你好</size></color></font>
+
+4
+00:00:03,500 --> 00:00:05,166
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>啊我看你简介上说轻松约定时间</size></color></font>
+
+5
+00:00:05,166 --> 00:00:06,733
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>那我们今天来聊一聊这个约定时间</size></color></font>
+
+6
+00:00:06,733 --> 00:00:07,533
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>行行</size></color></font>
+
+7
+00:00:08,800 --> 00:00:09,366
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>那那我问你</size></color></font>
+
+8
+00:00:09,366 --> 00:00:11,499
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>一个工作的使用这个使用场景</size></color></font>
+
+9
+00:00:11,566 --> 00:00:14,266
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>你们是怎样去解决这个类k的位置</size></color></font>
+
+10
+00:00:14,533 --> 00:00:16,533
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>嗯你说的这个热k</size></color></font>
+
+11
+00:00:16,666 --> 00:00:17,933
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>它具体有多热啊</size></color></font>
+
+12
+00:00:18,600 --> 00:00:20,866
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>哈哈哈哈</size></color></font>
+
+13
+00:00:22,133 --> 00:00:22,666
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>嗯</size></color></font>
+
+14
+00:00:22,666 --> 00:00:24,933
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>假设有些k工资能达到10万次查询</size></color></font>
+
+15
+00:00:24,933 --> 00:00:25,766
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>你要怎么说</size></color></font>
+
+16
+00:00:25,933 --> 00:00:27,699
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>嗯如果是10万QBS的话</size></color></font>
+
+17
+00:00:27,733 --> 00:00:29,566
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>单机的瑞利斯应该是扛不住的</size></color></font>
+
+18
+00:00:29,566 --> 00:00:31,366
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我们可能要去做一个读写分离吧</size></color></font>
+
+19
+00:00:31,366 --> 00:00:32,999
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>然后像重库可能还要再加一台</size></color></font>
+
+20
+00:00:33,000 --> 00:00:35,200
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>两台重库一起来做一个负载均衡</size></color></font>
+
+21
+00:00:36,200 --> 00:00:37,000
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>这样不知道可不可以</size></color></font>
+
+22
+00:00:37,166 --> 00:00:39,166
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>你可以你可以想象一个电商平台</size></color></font>
+
+23
+00:00:39,166 --> 00:00:41,099
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>这些就可以往往集中在少数的商品中</size></color></font>
+
+24
+00:00:41,100 --> 00:00:43,266
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>而且流量来得快也去得快啊</size></color></font>
+
+25
+00:00:43,266 --> 00:00:44,699
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>位置又增加一个重库</size></color></font>
+
+26
+00:00:44,700 --> 00:00:46,133
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>去同步这个全部的缓存</size></color></font>
+
+27
+00:00:46,133 --> 00:00:47,266
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>会不会有点浪费呢</size></color></font>
+
+28
+00:00:47,300 --> 00:00:49,933
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>嗯如果只是少量商品比较热的话</size></color></font>
+
+29
+00:00:49,933 --> 00:00:51,999
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我们可以去做一个多级的缓存吗</size></color></font>
+
+30
+00:00:52,100 --> 00:00:53,800
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就用本地缓存</size></color></font>
+
+31
+00:00:53,800 --> 00:00:55,766
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>如果添加了本地缓存之后那这些</size></color></font>
+
+32
+00:00:56,266 --> 00:00:57,866
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>热k的查询应该也都不会成为新的</size></color></font>
+
+33
+00:00:57,866 --> 00:00:59,366
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>平静了应该能解决这个问题</size></color></font>
+
+34
+00:01:00,200 --> 00:01:02,466
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>嗯啊用本地缓存是一个好办法</size></color></font>
+
+35
+00:01:02,466 --> 00:01:04,066
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>但是平台有很多活动</size></color></font>
+
+36
+00:01:04,100 --> 00:01:06,200
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>具体哪些商品会突然成为热k</size></color></font>
+
+37
+00:01:06,200 --> 00:01:08,800
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我们是没有办法提现这个预知的啊</size></color></font>
+
+38
+00:01:08,800 --> 00:01:10,766
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>本地缓存又缓存不了所有的商品</size></color></font>
+
+39
+00:01:10,766 --> 00:01:12,299
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>你要去怎么去解决</size></color></font>
+
+40
+00:01:12,566 --> 00:01:14,899
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>嗯本地缓存缓存不了所有的商品车</size></color></font>
+
+41
+00:01:14,900 --> 00:01:16,800
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>那我们可能要用一个热p的探查技术</size></color></font>
+
+42
+00:01:16,800 --> 00:01:18,200
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>这样本地缓存只需缓存热p</size></color></font>
+
+43
+00:01:18,366 --> 00:01:19,499
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>具体要怎么做呢</size></color></font>
+
+44
+00:01:19,866 --> 00:01:21,299
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我之前有看过一个京东的分享吧</size></color></font>
+
+45
+00:01:21,300 --> 00:01:22,900
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>他们是在客户</size></color></font>
+
+46
+00:01:22,900 --> 00:01:24,133
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>端和瑞丽时之间</size></color></font>
+
+47
+00:01:24,133 --> 00:01:25,499
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>他们还添加了一层prose</size></color></font>
+
+48
+00:01:25,600 --> 00:01:26,533
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>然后这一层prose呢</size></color></font>
+
+49
+00:01:26,533 --> 00:01:29,066
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>会去做所有p的访问频率的一个统计</size></color></font>
+
+50
+00:01:29,066 --> 00:01:30,999
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>如果发现哪个k达到了乐k的标准</size></color></font>
+
+51
+00:01:31,000 --> 00:01:33,900
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>他就会把这些k推送到客户端的SDK上</size></color></font>
+
+52
+00:01:33,900 --> 00:01:35,200
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>然后客户端就会根据这些k</size></color></font>
+
+53
+00:01:35,200 --> 00:01:36,266
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>去做一个本地缓存</size></color></font>
+
+54
+00:01:36,266 --> 00:01:38,766
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就他主动把乐k推送给客户端</size></color></font>
+
+55
+00:01:38,766 --> 00:01:40,666
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>然后像阿里云的瑞丽丝</size></color></font>
+
+56
+00:01:40,666 --> 00:01:42,333
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>他天生也自带了一个这个功能</size></color></font>
+
+57
+00:01:42,333 --> 00:01:44,699
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就是他也有一层prose去检测热key</size></color></font>
+
+58
+00:01:44,700 --> 00:01:46,100
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>然后他的这个prose检测到了key</size></color></font>
+
+59
+00:01:46,100 --> 00:01:47,333
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就直接缓存在prose里面</size></color></font>
+
+60
+00:01:47,333 --> 00:01:48,666
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>不会推送给客户端了</size></color></font>
+
+61
+00:01:48,666 --> 00:01:49,099
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>这两个</size></color></font>
+
+62
+00:01:49,100 --> 00:01:50,900
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>都算是乐key的一个解决方案吧</size></color></font>
+
+63
+00:01:51,766 --> 00:01:52,566
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>嗯啊</size></color></font>
+
+64
+00:01:52,566 --> 00:01:53,866
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>你知道的还挺多啊</size></color></font>
+
+65
+00:01:53,866 --> 00:01:55,699
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>为什么我们在progress里面统计这个热k</size></color></font>
+
+66
+00:01:55,700 --> 00:01:56,966
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我在客户端去统计他了</size></color></font>
+
+67
+00:01:57,000 --> 00:01:59,133
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>嗯在集群的情况下</size></color></font>
+
+68
+00:01:59,133 --> 00:02:01,899
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我们可能一个服务也会有100多台</size></color></font>
+
+69
+00:02:01,900 --> 00:02:04,166
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>那所有的流量这么平均的分散一下</size></color></font>
+
+70
+00:02:04,166 --> 00:02:05,966
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就每个客户端对热k的检测都变得</size></color></font>
+
+71
+00:02:05,966 --> 00:02:07,066
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>没有那么灵敏了</size></color></font>
+
+72
+00:02:07,166 --> 00:02:08,199
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就不那么真实了</size></color></font>
+
+73
+00:02:08,200 --> 00:02:08,666
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>所以</size></color></font>
+
+74
+00:02:08,666 --> 00:02:10,599
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>然后还有让客户当来统计乐k的话</size></color></font>
+
+75
+00:02:10,600 --> 00:02:11,400
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>客户当就要去</size></color></font>
+
+76
+00:02:11,466 --> 00:02:13,766
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>存所有k的一个相关的统计情况</size></color></font>
+
+77
+00:02:13,766 --> 00:02:15,799
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>那这也会很占有我们客户当的内存</size></color></font>
+
+78
+00:02:15,933 --> 00:02:17,099
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>所以我们就本着</size></color></font>
+
+79
+00:02:17,666 --> 00:02:18,699
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就是最小力度的原则</size></color></font>
+
+80
+00:02:18,700 --> 00:02:20,533
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就是一个服务只做一件事</size></color></font>
+
+81
+00:02:20,533 --> 00:02:21,666
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我们用pose来做这件事</size></color></font>
+
+82
+00:02:21,666 --> 00:02:22,999
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>如果pose哪天成了平静</size></color></font>
+
+83
+00:02:23,000 --> 00:02:24,366
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我们很像扩展pose</size></color></font>
+
+84
+00:02:24,466 --> 00:02:25,733
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>但性价比也会比较高</size></color></font>
+
+85
+00:02:25,800 --> 00:02:27,733
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>然后客户灯那边会根据key</size></color></font>
+
+86
+00:02:27,800 --> 00:02:29,200
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>的哈西来决定</size></color></font>
+
+87
+00:02:29,400 --> 00:02:31,500
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>每个请求具体落在哪一个pose上了</size></color></font>
+
+88
+00:02:31,500 --> 00:02:33,266
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>这样子一个pose他对每个key的</size></color></font>
+
+89
+00:02:33,266 --> 00:02:35,333
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>一个流量感词都会变得更加的敏感</size></color></font>
+
+90
+00:02:36,566 --> 00:02:37,333
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>嗯</size></color></font>
+
+91
+00:02:37,333 --> 00:02:39,066
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我们用的这个本地缓存然后Redis</size></color></font>
+
+92
+00:02:39,066 --> 00:02:41,199
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>Redis上的数据和本地缓存</size></color></font>
+
+93
+00:02:41,533 --> 00:02:42,899
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>如果他不他们两个不一致</size></color></font>
+
+94
+00:02:42,900 --> 00:02:43,800
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>会带来什么问题</size></color></font>
+
+95
+00:02:43,900 --> 00:02:45,933
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>嗯Redis缓存不一致</size></color></font>
+
+96
+00:02:46,666 --> 00:02:48,299
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就一般我们如果选择用了缓存</size></color></font>
+
+97
+00:02:48,300 --> 00:02:49,933
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就相当于默认了缓存的实效性</size></color></font>
+
+98
+00:02:49,933 --> 00:02:50,799
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>这些的问题</size></color></font>
+
+99
+00:02:50,800 --> 00:02:52,400
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就有一点要注意的就是</size></color></font>
+
+100
+00:02:52,733 --> 00:02:55,599
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我们就不要根据缓存的</size></color></font>
+
+101
+00:02:55,766 --> 00:02:57,499
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>查询去做一些逻辑的判断</size></color></font>
+
+102
+00:02:58,100 --> 00:02:59,900
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就比如说像</size></color></font>
+
+103
+00:03:00,366 --> 00:03:01,366
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>先读啊先读缓存</size></color></font>
+
+104
+00:03:01,366 --> 00:03:02,266
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>然后读到了怎么样</size></color></font>
+
+105
+00:03:02,266 --> 00:03:03,766
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就先读后斜这样的操作</size></color></font>
+
+106
+00:03:03,766 --> 00:03:05,533
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>如果我们是以Reddish为准的数据呢</size></color></font>
+
+107
+00:03:05,566 --> 00:03:07,533
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我们就要只能用Redish的一些原子操作</size></color></font>
+
+108
+00:03:07,533 --> 00:03:08,466
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>比如原字真原字简</size></color></font>
+
+109
+00:03:08,466 --> 00:03:10,099
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>或者说c的2S这些操作</size></color></font>
+
+110
+00:03:10,100 --> 00:03:12,566
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>来判断之后要不要进行一些新的操作</size></color></font>
+
+111
+00:03:12,566 --> 00:03:14,366
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>如果是我们以数据库为准的数据呢</size></color></font>
+
+112
+00:03:14,366 --> 00:03:15,966
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我们就不能去图瑞丽斯来判断</size></color></font>
+
+113
+00:03:15,966 --> 00:03:16,999
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>要以数据库的事务啊</size></color></font>
+
+114
+00:03:17,000 --> 00:03:18,500
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>乐观所这些执行的情况</size></color></font>
+
+115
+00:03:18,500 --> 00:03:19,800
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>来做后面逻辑的一个判断</size></color></font>
+
+116
+00:03:20,333 --> 00:03:21,533
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就是不能太相信好处</size></color></font>
+
+117
+00:03:21,533 --> 00:03:23,333
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>反正只能用来查不能用来做逻辑</size></color></font>
+
+118
+00:03:23,333 --> 00:03:24,966
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>大概就这样的一个思路</size></color></font>
+
+119
+00:03:25,733 --> 00:03:26,666
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>上香呃</size></color></font>
+
+120
+00:03:26,666 --> 00:03:27,566
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我们刚刚聊到这个热</size></color></font>
+
+121
+00:03:27,566 --> 00:03:28,799
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>可以录取的这个操作</size></color></font>
+
+122
+00:03:28,800 --> 00:03:30,200
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>如果我们用威利斯来维护一个</size></color></font>
+
+123
+00:03:30,200 --> 00:03:31,400
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>秒杀商品的这个库存</size></color></font>
+
+124
+00:03:31,400 --> 00:03:32,566
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>这个库存扣减</size></color></font>
+
+125
+00:03:32,566 --> 00:03:34,299
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>并发也达到了这个10万QPS</size></color></font>
+
+126
+00:03:34,366 --> 00:03:36,366
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>要去怎么来设计他这个功能</size></color></font>
+
+127
+00:03:36,533 --> 00:03:39,099
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>嗯这就是一个相相当于写热点嘛</size></color></font>
+
+128
+00:03:39,100 --> 00:03:41,066
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就写热点他的常规的解决方案</size></color></font>
+
+129
+00:03:41,133 --> 00:03:43,799
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我们可以打散或者说是过滤</size></color></font>
+
+130
+00:03:43,966 --> 00:03:45,699
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>或者排队或者说是合并</size></color></font>
+
+131
+00:03:45,866 --> 00:03:47,966
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就像这样子的一个库存扣件的请求</size></color></font>
+
+132
+00:03:47,966 --> 00:03:48,766
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>针对于单个商品</size></color></font>
+
+133
+00:03:48,766 --> 00:03:50,099
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>他就没办法去搭讪了</size></color></font>
+
+134
+00:03:50,100 --> 00:03:51,366
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>那我们可能可以取消一下</size></color></font>
+
+135
+00:03:51,366 --> 00:03:52,199
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>比如说我们对</size></color></font>
+
+136
+00:03:52,666 --> 00:03:53,699
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>秒杀接口做一个限流</size></color></font>
+
+137
+00:03:53,700 --> 00:03:55,166
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>那这些超出来的流量呢</size></color></font>
+
+138
+00:03:55,600 --> 00:03:57,800
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就直接告诉用户所商品被抢光了</size></color></font>
+
+139
+00:03:57,800 --> 00:03:59,266
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>就我们只承担我们能看得起的</size></color></font>
+
+140
+00:03:59,266 --> 00:04:00,466
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>这样的一个血球BS</size></color></font>
+
+141
+00:04:00,800 --> 00:04:03,333
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>或者是如果我们的产品功能对用户</size></color></font>
+
+142
+00:04:03,466 --> 00:04:04,999
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>秒杀结果的感知没有那么的强烈</size></color></font>
+
+143
+00:04:05,000 --> 00:04:06,600
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>那我们就可以做一个易步的</size></color></font>
+
+144
+00:04:06,600 --> 00:04:07,366
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>通知的方法</size></color></font>
+
+145
+00:04:07,366 --> 00:04:08,699
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我们就把这些库存扣剪</size></color></font>
+
+146
+00:04:08,733 --> 00:04:10,266
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>都扔到MQ里面去</size></color></font>
+
+147
+00:04:10,266 --> 00:04:12,066
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>然后去排队去慢慢的消费</size></color></font>
+
+148
+00:04:12,366 --> 00:04:13,166
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>或者我们的客户端</size></color></font>
+
+149
+00:04:13,166 --> 00:04:14,099
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>其实也可以对库存构成</size></color></font>
+
+150
+00:04:14,100 --> 00:04:14,766
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>做一个合并</size></color></font>
+
+151
+00:04:14,766 --> 00:04:16,766
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我们一次请求类利时就扣5个库存</size></color></font>
+
+152
+00:04:16,800 --> 00:04:18,766
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>这样子QPS就可以降低5倍吗</size></color></font>
+
+153
+00:04:18,766 --> 00:04:20,333
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>这就是批量的一个思想</size></color></font>
+
+154
+00:04:20,333 --> 00:04:21,399
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>这个思想有点像</size></color></font>
+
+155
+00:04:21,466 --> 00:04:22,933
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>美团的分布式ID生成器</size></color></font>
+
+156
+00:04:22,966 --> 00:04:23,966
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>他也是为了避免</size></color></font>
+
+157
+00:04:24,133 --> 00:04:25,566
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>数据库单点的一个性能问题</size></color></font>
+
+158
+00:04:25,566 --> 00:04:27,266
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>然后他一次性每个他的每个服务</size></color></font>
+
+159
+00:04:27,266 --> 00:04:28,466
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>一次性就会请求一批</size></color></font>
+
+160
+00:04:28,500 --> 00:04:29,533
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>一整批的ID</size></color></font>
+
+161
+00:04:29,533 --> 00:04:31,333
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>然后也是降低很大的QPS</size></color></font>
+
+162
+00:04:33,266 --> 00:04:34,333
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>嗯哦</size></color></font>
+
+163
+00:04:34,333 --> 00:04:36,199
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>那你掌握的还不错呃</size></color></font>
+
+164
+00:04:36,300 --> 00:04:37,966
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>你这边还有没有什么问题需要问我的</size></color></font>
+
+165
+00:04:37,966 --> 00:04:39,366
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>嗯我想了解一下</size></color></font>
+
+166
+00:04:39,366 --> 00:04:41,133
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>你们公司用的是哪些技术站</size></color></font>
+
+167
+00:04:41,133 --> 00:04:43,733
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>然后平常这个接口QPS有多少</size></color></font>
+
+168
+00:04:45,133 --> 00:04:47,933
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>呃我们这边基本用的就是呃像</size></color></font>
+
+169
+00:04:48,266 --> 00:04:49,333
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>可口可乐的阿里巴巴</size></color></font>
+
+170
+00:04:49,333 --> 00:04:51,299
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>然后用中间键呢就是Mac口Radis</size></color></font>
+
+171
+00:04:51,333 --> 00:04:52,966
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>MQ ES这些都用不到</size></color></font>
+
+172
+00:04:52,966 --> 00:04:54,299
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>然后你说到这个QPS</size></color></font>
+
+173
+00:04:54,300 --> 00:04:55,700
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>我们负责商品模块</size></color></font>
+
+174
+00:04:55,700 --> 00:04:57,566
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>平常的这个QPS大概是500多</size></color></font>
+
+175
+00:04:57,566 --> 00:04:58,333
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>然后</size></color></font>
+
+176
+00:04:58,333 --> 00:05:00,899
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>到这个高峰期的时候能达到五六千吧</size></color></font>
+
+177
+00:05:01,100 --> 00:05:03,000
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>啊好那那我大概了解了</size></color></font>
+
+178
+00:05:04,100 --> 00:05:06,400
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>啊行那咱明天就能出结果</size></color></font>
+
+179
+00:05:06,400 --> 00:05:08,133
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>你后续等这个通知算了啊</size></color></font>
+
+180
+00:05:08,133 --> 00:05:09,499
+<font id="" path="C:/Users/47895/AppData/Local/JianyingPro/Apps/3.5.0.9238/Resources/Font/SystemFont/zh-hans.ttf"><color=(1.000000, 1.000000, 1.000000, 1.000000)><size=8.000000>好的好的好的好拜拜</size></color></font>
+

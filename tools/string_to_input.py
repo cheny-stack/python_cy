@@ -6,7 +6,7 @@ app = QApplication([])
 clipboard = app.clipboard()
 
 data = clipboard.mimeData()
-
+print(data.formats())
 if('text/plain' in data.formats()):
     data = data.text()
     print(data)

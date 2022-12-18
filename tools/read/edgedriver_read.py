@@ -63,11 +63,11 @@ def clear(old_str):
             if not any(bad_word in line for bad_word in bad_words):
     #            line = re.sub(r"千", "于", str(line))
     #            line = re.sub(r"([\u4e00-\u9fa5]+)\s+", "", str(line))
-    #            line = re.sub(r"\s+([\u4e00-\u9fa5]+)", "", str(line))
+                line = re.sub(r"\s+([\u4e00-\u9fa5]+)", "", str(line))
                 # line = re.sub(r"[\r\n\s\(\)“”\"]", "", str(line))
                 line = re.sub(r"[#]", "", str(line))
                 # res += (line)
-                res += (line + "\n")
+                res += (line + "") # \n
         return res
 
 def reading(data):
@@ -115,16 +115,16 @@ def change_deal():
         data = clear(data)
         reading(data)
 
-keyboard.add_hotkey('+', change_deal, args=None)
+keyboard.add_hotkey('0', change_deal, args=None)
 # keyboard.add_hotkey('9', drag_select, args=None)
 
-window = QMainWindow()
-btn1 = QPushButton("朗读剪切板", window)
-btn1.move(30, 50)
-btn1.clicked.connect(change_deal) 
-window.statusBar()
-window.setGeometry(300, 300, 160, 150)
-window.setWindowTitle('朗读工具')
-window.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
-window.show()  
+# window = QMainWindow()
+# btn1 = QPushButton("朗读剪切板", window)
+# btn1.move(30, 50)
+# btn1.clicked.connect(change_deal) 
+# window.statusBar()
+# window.setGeometry(300, 300, 160, 150)
+# window.setWindowTitle('朗读工具')
+# window.setWindowFlags(QtCore.Qt.WindowStaysOnTopHint)
+# window.show()  
 app.exec_()
