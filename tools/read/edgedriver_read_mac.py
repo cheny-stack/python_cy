@@ -1,5 +1,6 @@
 import time
 from selenium import webdriver
+from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 import re
 import sys
@@ -22,7 +23,7 @@ read_window = None
 for handle in all_windows:
     driver.switch_to.window(handle)
     try:
-        textarea = driver.find_element_by_xpath('//*[@id="input-5"]')
+        textarea = driver.find_element(By.XPATH, '//*[@id="input-5"]')
         read_window = handle
     except:
         print('窗口错误')
@@ -54,18 +55,18 @@ def clear(old_str):
             if not any(bad_word in line for bad_word in bad_words):
     #            line = re.sub(r"千", "于", str(line))
     #            line = re.sub(r"([\u4e00-\u9fa5]+)\s+", "", str(line))
-    #            line = re.sub(r"\s+([\u4e00-\u9fa5]+)", "", str(line))
-                line = re.sub(r"[\r\n\s\(\)“”\"]", "", str(line))
+                line = re.sub(u"\\(.*?\\)|\\{.*?}|\\[.*?]", "", str(line))
+                # line = re.sub(r"[\r\n\s\(\)“”\"]", "", str(line))
                 # res += (line)
                 res += (line + "\n")
         return res
 
 def reading(data):
-    textarea = driver.find_element_by_xpath('//*[@id="input-5"]')
+    textarea = driver.find_element(By.XPATH, '//*[@id="input-5"]')
     textarea.send_keys(Keys.COMMAND + "a")
     textarea.send_keys(Keys.DELETE)
     textarea.send_keys(data)
-    btn = driver.find_element_by_xpath('//*[@id="app"]/div/main/div/div/div[1]/div[2]/div/div[2]/button[1]')
+    btn = driver.find_element(By.XPATH, '//*[@id="app"]/div/main/div/div/div[1]/div[2]/div/div[2]/button[1]')
     print(btn)
     btn.click()
 
@@ -90,4 +91,5 @@ def change_deal():
         reading(data)
 
 keyboard.add_hotkey('0', change_deal, args=None)
+keyboard.add_hotkey('alt', change_deal, args=None)
 app.exec_()
