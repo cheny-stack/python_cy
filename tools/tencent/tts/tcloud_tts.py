@@ -8,6 +8,7 @@ import os
 import simpleaudio as sa
 from pydub import AudioSegment
 from pydub.playback import play
+import pygame
 
 from request_util import request, authorization
 
@@ -50,11 +51,21 @@ def task_process(text):
         return
     '''
     t = time.time()
-    song = AudioSegment.from_file(io.BytesIO(r.content), format="raw", 
-                                   frame_rate=16000, channels=1, 
-                                   sample_width=2,nframes=0).remove_dc_offset()                                  
+    # song = AudioSegment.from_file(io.BytesIO(r.content), format="raw", 
+    #                                frame_rate=16000, channels=1, 
+    #                                sample_width=2,nframes=0).remove_dc_offset() 
+    # song = AudioSegment.from_file(io.BytesIO(r.content), format="mp3")
+    fp = io.BytesIO(r.content)
+    fp.seek(0)
+    pygame.init()
+    pygame.mixer.init()
+    pygame.mixer.music.load(fp, "mp3")                         
     print(f'coast:{time.time() - t:.8f}s')
-    play(song)
+    pygame.mixer.music.play()
+    while pygame.mixer.music.get_busy():
+        pygame.time.Clock().tick(10)
+
+    # play(song)
 
     # i = 1
     # timestr = time.strftime("%Y%m%d-%H%M%S")
