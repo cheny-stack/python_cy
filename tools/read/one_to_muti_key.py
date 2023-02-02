@@ -1,13 +1,7 @@
 # -*- coding: utf-8 -*
 #!/usr/bin/python
 from PyQt5.QtWidgets import *
-import time
-import win32gui
-import win32com.client
-import re
 import keyboard
-import argparse
-import pythoncom
 
 
 def press_muti():
