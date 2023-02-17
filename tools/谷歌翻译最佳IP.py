@@ -44,6 +44,23 @@ def fastScan():
     #使用线程池，设置12个线程，可修改
     with ThreadPoolExecutor(12) as Pool:
         Pool.map(pingInfo, ipList())
+        
+import fileinput
+import re
+def replaceHostFile(hostLine):
+    domain = hostLine.split(" ")[1]
+    # 打开hosts文件，将文件内容读入一个列表
+    hosts_path="C:/Windows/System32/drivers/etc/HOSTS"
+    with open(hosts_path, 'r') as file:
+        lines = file.readlines()
+        # 查找和替换每一行
+        for i in range(len(lines)):
+            # 查找以“Hello”开头的行
+            if re.search(domain, lines[i]):
+                # 将该行替换为“Goodbye”
+                lines[i] = hostLine
+    with open(hosts_path, "w") as file:
+        file.writelines(lines)
 
 
 if __name__ == '__main__':
@@ -111,11 +128,12 @@ if __name__ == '__main__':
     fastip, ms = sortedSpeed[0]
     hostTxt = f'{fastip} translate.googleapis.com'
     copy(hostTxt)
+    replaceHostFile(hostTxt)
 
     print(f'\n最佳IP是：【{fastip}】，响应时间：【{ms}】')
     print(
         f'\n\n设置hosts的内容“已复制到剪贴板”：   {hostTxt}\n\n\n按【任意键】打开hosts目录，然后【手动】修改。',
         end='')
 
-    os.system('pause>nul')
-    os.popen('explorer /select,C:\Windows\System32\drivers\etc\hosts')
+    # os.system('pause>nul')
+    # os.popen('explorer /select,C:\Windows\System32\drivers\etc\hosts')
