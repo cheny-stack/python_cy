@@ -18,5 +18,5 @@ app = QApplication([])
 
 
 # 监听剪切板变动 alt_click
-keyboard.add_hotkey('0', press_muti, args=None)
+keyboard.add_hotkey('+', press_muti, args=None)
 app.exec_()
