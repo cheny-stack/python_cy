@@ -87,7 +87,16 @@ class GoogleTranslate(object):
         session.headers = base_headers
         resp = session.get(url, proxies=proxies if self.http_proxy.strip() else None, timeout=5).json()
         return resp
-
+    def camel_case_split(self,str):
+        words = [[str[0]]]
+        for c in str[1:]:
+            if words[-1][-1].islower() and c.isupper():
+                words.append(list(c))
+            else:
+                words[-1].append(c)
+        words = [''.join(word) for word in words]
+        return '_'.join(words)
+    
     def result_to_html(self):
         css_text = """\
         <style type="text/css">
@@ -102,10 +111,12 @@ class GoogleTranslate(object):
         match = re.compile(rf"({re.escape('^_^')}: Translate)(.*)(To)(.*)")
         self.result = match.sub(r'<gray>\1</gray>\2<gray>\3</gray>\4', self.result)
         self.result = f'<html>\n<head>\n{css_text}\n</head>\n<body>\n<p>{self.result}</p>\n</body>\n</html>'
-
+        
+  
     async def get_translation(self, target_language, query_string, tkk=''):
         self.result = ''
         self.target_language = target_language
+        query_string = self.camel_case_split(query_string)
         query_string = query_string.replace("_", " ")
         self.query_string = query_string
         tk = Token(tkk).calculate_token(self.query_string)
