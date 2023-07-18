@@ -112,12 +112,16 @@ class GoogleTranslate(object):
         self.result = match.sub(r'<gray>\1</gray>\2<gray>\3</gray>\4', self.result)
         self.result = f'<html>\n<head>\n{css_text}\n</head>\n<body>\n<p>{self.result}</p>\n</body>\n</html>'
         
-  
+    def remove_special_chars(self,string):
+        pattern = r"[_*@/]"
+        result = re.sub(pattern, " ", string)
+        return result
+    
     async def get_translation(self, target_language, query_string, tkk=''):
         self.result = ''
         self.target_language = target_language
         query_string = self.camel_case_split(query_string)
-        query_string = query_string.replace("_", " ")
+        query_string = self.remove_special_chars(query_string)
         self.query_string = query_string
         tk = Token(tkk).calculate_token(self.query_string)
         if len(self.query_string) > 5000:
