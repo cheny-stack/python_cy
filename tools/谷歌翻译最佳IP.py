@@ -196,7 +196,7 @@ if __name__ == '__main__':
 
     #取最佳值
     fastip, ms = sortedSpeed[0]
-    hostTxt = f'{fastip} translate.googleapis.com'
+    hostTxt = f'{fastip} googleapis.com'
     copy(hostTxt)
     replaceHostFile(hostTxt)
 
